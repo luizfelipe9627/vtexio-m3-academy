@@ -1,0 +1,10 @@
+query GET_SESSION{
+  getSession{
+    adminUserEmail
+    profile {
+      id
+      email
+      firstName
+    }
+  }
+}

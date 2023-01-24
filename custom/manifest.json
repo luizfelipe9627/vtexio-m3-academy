@@ -1,0 +1,22 @@
+{
+  "vendor": "agenciamagma",
+  "name": "m3-custom",
+  "version": "0.0.0",
+  "title": "m3-custom",
+  "description": "m3-custom component",
+  "defaultLocale": "pt-BR",
+  "builders": {
+    "messages": "1.x",
+    "store": "0.x",
+    "react": "3.x"
+  },
+  "dependencies": {
+    "vtex.styleguide": "9.x",
+    "vtex.css-handles": "0.x",
+    "vtex.native-types": "0.x",
+    "vtex.store-graphql": "2.x",
+    "vtex.search-graphql": "0.x",
+    "vtex.checkout-graphql": "0.x"
+  },
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}

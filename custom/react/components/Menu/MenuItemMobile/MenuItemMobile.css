@@ -1,0 +1,156 @@
+.menuItemMobile{
+
+}
+
+
+
+.menuItemMobileSubToggler::after{
+    content: "";
+    display: block;
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    mask: url(../assets/rightArrow.svg);
+    width: 5px;
+    height: 8.89px;
+    mask-size: cover;
+    background: #7D7D7D;
+}
+
+.menuItemMobileLink{
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+    color: #828282;
+    background: transparent;
+    display: block;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 15px  12px;
+    text-align: left;
+    text-decoration: none;
+
+}
+
+.menuItemMobileSubToggler{
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+    color: #828282;
+    background: transparent;
+    display: block;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 15px  12px;
+    text-align: left;
+    position: relative;
+}
+
+.menuItemSubMenuContainer{
+    background: #ffffff;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    transition: all 0.3s cubic-bezier(.23,1,.32,1);
+    padding: 24px  30px;
+    z-index: 2;
+}
+.menuItemSubMenuClose::before{
+    position: absolute;
+    content: "";
+    display: block;
+    width: 5px;
+    height: 8.89px;
+    mask: url(../assets/leftArrow.svg);
+    mask-size: cover;
+    background: #7D7D7D;
+    left: -8px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.menuItemSubMenuClose{
+    position: relative;
+    font-family: ""Roboto", sans-serif", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
+    color: #828282;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.menuItemSubMenuHidden{
+    left: 100%;
+}
+
+.menuItemSubMenuShown{
+    left: 0;
+    overflow: scroll;
+}
+
+.menuItemSubMenuItems{
+    list-style: none;
+    margin: 0;
+    margin-top: 20px;
+    padding: 0;
+}
+
+.menuItemSubMenuItem{
+    margin: 0;
+}
+
+.menuItemSubMenuLastItem{}
+
+.menuItemSubMenuLink{
+    font-family: ""Roboto", sans-serif",sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #292929;
+    text-decoration: none;
+    display: inline-block;
+    padding: 2px;
+}
+
+.menuItemSubMenuLinkHighlight{
+    font-family: ""Roboto", sans-serif",sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    color: #282828;
+    text-decoration: none;
+    margin-bottom: 16px;
+    display: inline-block;
+    padding: 2px;
+}
+
+@media(max-width: 920px) {
+    .titleMobile {
+        display: block;
+        font-family: "Roboto", sans-serif;
+        font-weight: bold;
+        font-size: 16px;
+        text-decoration: none;
+        color: #828282;
+        margin: 15px 0 0;
+    }
+    .menuItemSubMenuLinkHighlight {
+        color: #828282;
+        margin-bottom: 5px;
+    }
+    .menuItemSubMenuLink {
+        color: #828282;
+    }
+}

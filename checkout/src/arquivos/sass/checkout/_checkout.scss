@@ -1,0 +1,122 @@
+@import "./checkout-vazio";
+@import "./checkout-carrinho";
+@import "./checkout-pagamento";
+@import "./checkout-autenticacao";
+
+html {
+    height: 100%;
+    min-height: 100%;
+}
+
+footer {
+    margin-top: auto;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    padding-top: 0;
+
+    @include mq(md, max) {
+        padding-left: 0;
+    }
+
+    &.body-cart {
+        font-family: $font-family;
+    }
+
+    &.body-cart,
+    &.body-order-form {
+        @include mq(xl, min) {
+            padding-top: 0;
+        }
+
+        @include mq(lg, max) {
+            padding-bottom: 0 !important;
+        }
+
+        @include mq(md, max) {
+            padding-right: 0;
+            padding-left: 0;
+        }
+    }
+
+    .container-cart {
+        @include mq(xl, min) {
+            width: 1024px;
+        }
+    }
+}
+
+.btn-success {
+    background: $color-black;
+    text-shadow: none;
+
+    &:hover {
+        background: lighten($color-black, 15%);
+    }
+}
+
+.emailInfo h3 {
+    color: $color-black !important;
+}
+
+#cart-title,
+#orderform-title {
+    color: $color-gray2;
+    font-family: $font-family;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 42px;
+    margin: 40px 0 30px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    @include mq(md, max) {
+        margin-left: 30px;
+    }
+}
+
+.dropdown {
+    &__content {
+        &--closed {
+            display: none;
+        }
+    }
+
+    &__title {
+        cursor: pointer;
+        user-select: none;
+
+        &::before,
+        &::after {
+            content: "";
+            background: $color-gray2;
+            display: block;
+            float: right;
+            height: 2px;
+            width: 8px;
+            margin-top: 8px;
+        }
+
+        &::before {
+            transform: rotate(0deg);
+            transition: 0.3s;
+        }
+
+        &::after {
+            transform: rotate(90deg);
+            transition: 0.3s;
+            margin-right: -8px;
+        }
+
+        &.closed::before {
+            transform: rotate(180deg);
+        }
+
+        &.closed::after {
+            transform: rotate(0);
+        }
+    }
+}

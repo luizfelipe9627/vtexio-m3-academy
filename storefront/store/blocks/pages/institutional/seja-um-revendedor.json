@@ -1,0 +1,36 @@
+{
+    "store.custom#seja-um-revendedor": {
+        "blocks": [
+            "flex-layout.row#institucional-title",
+            "flex-layout.row#wrapper-seja-um-revendedor"
+        ]
+    },
+    "flex-layout.row#wrapper-seja-um-revendedor": {
+        "children": [
+            "flex-layout.col#inst-nav",
+            "flex-layout.row#institucional-revendedor"
+        ],
+        "props": {
+            "blockClass": "institucional-wrapper"
+        }
+    },
+    "flex-layout.row#institucional-revendedor": {
+        "props": {
+            "blockClass": "institucional-main-row"
+        },
+        "children": ["flex-layout.col#institucional"]
+    },
+    "flex-layout.col#institucional": {
+        "children": ["rich-text#seja-um-revendedor"]
+    },
+    "rich-text#seja-um-revendedor": {
+        "props": {
+            "textAlignment": "LEFT",
+            "textPosition": "LEFT",
+            "text": "# Heading level 1 \n Paragraph exemple, \n ![Aqui vai o alt da imagem](assets/imgs/institucional-img.png) \nAssim que se pula linha \n ## My Great Heading 2",
+            "textColor": "",
+            "font": "t-heading-5",
+            "blockClass": "institucional"
+        }
+    }
+}

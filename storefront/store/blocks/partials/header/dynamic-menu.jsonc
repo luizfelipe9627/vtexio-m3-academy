@@ -1,0 +1,74 @@
+{
+    "dynamic-menu": {
+        "props": {
+            "isMobile": false,
+            "items": [
+                {
+                    "MenuItemProps": {
+                        "iconSrc": "string",
+                        "title": "Teste",
+                        "href": "/",
+                        "internal": true,
+                        "content": "Teste",
+                        "items": [
+                            {
+                                "SubMenuItemProps": {
+                                    "iconSrc": "string",
+                                    "title": "Teste",
+                                    "href": "/",
+                                    "internal": true,
+                                    "content": "Teste"
+                                }
+                            },
+                            {
+                                "SubMenuItemProps": {
+                                    "iconSrc": "string",
+                                    "title": "Inverno 2021",
+                                    "href": "/",
+                                    "internal": true,
+                                    "content": "Inverno 2021"
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    },
+    "dynamic-menu#mobile": {
+        "props": {
+            "isMobile": true,
+            "items": [
+                {
+                    "MenuItemProps": {
+                        "iconSrc": "string",
+                        "title": "Teste",
+                        "href": "/",
+                        "internal": true,
+                        "content": "Teste",
+                        "items": [
+                            {
+                                "SubMenuItemProps": {
+                                    "iconSrc": "string",
+                                    "title": "Teste",
+                                    "href": "/",
+                                    "internal": true,
+                                    "content": "Teste"
+                                }
+                            },
+                            {
+                                "SubMenuItemProps": {
+                                    "iconSrc": "string",
+                                    "title": "Inverno 2021",
+                                    "href": "/",
+                                    "internal": true,
+                                    "content": "Inverno 2021"
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    }
+}

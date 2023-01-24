@@ -1,0 +1,74 @@
+{
+    "flex-layout.row#deals": {
+        "children": ["slider-layout"],
+        "props": {
+            "blockClass": "deals"
+        }
+    },
+    "slider-layout": {
+        "props": {
+            "itemsPerPage": {
+                "desktop": 3,
+                "tablet": 1,
+                "mobile": 1
+            },
+            "infinite": true,
+            "showNavigationArrows": "desktopOnly",
+            "showPaginationDots": "never",
+            "blockClass": "deals-carousel",
+            "centerMode": {
+                "mobile": true
+            }
+        },
+        "children": [
+            "flex-layout.col#deals1",
+            "flex-layout.col#deals2",
+            "flex-layout.col#deals3"
+        ]
+    },
+    "flex-layout.col#deals1": {
+        "children": ["image#deal1", "rich-text#deal1"]
+    },
+    "image#deal1": {
+        "props": {
+            "src": "assets/svgs/box-white.svg",
+            "maxHeight": "24px"
+        }
+    },
+    "rich-text#deal1": {
+        "props": {
+            "text": "Entrega para todo **Brasil**",
+            "blockClass": "deals"
+        }
+    },
+    "flex-layout.col#deals2": {
+        "children": ["image#deal2", "rich-text#deal2"]
+    },
+    "image#deal2": {
+        "props": {
+            "src": "assets/svgs/truck-white.svg",
+            "maxHeight": "24px"
+        }
+    },
+    "rich-text#deal2": {
+        "props": {
+            "text": "Frete Grátis acima de **R$XXX,XX**",
+            "blockClass": "deals"
+        }
+    },
+    "flex-layout.col#deals3": {
+        "children": ["image#deal3", "rich-text#deal3"]
+    },
+    "image#deal3": {
+        "props": {
+            "src": "assets/svgs/coupon-white.svg",
+            "maxHeight": "24px"
+        }
+    },
+    "rich-text#deal3": {
+        "props": {
+            "text": "X% nas compras no **Boleto Bancário**",
+            "blockClass": "deals"
+        }
+    }
+}

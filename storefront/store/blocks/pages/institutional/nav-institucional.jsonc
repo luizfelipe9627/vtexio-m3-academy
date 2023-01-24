@@ -1,0 +1,139 @@
+{
+    "flex-layout.col#inst-nav": {
+        "props": {
+            "blockClass": "navegacao-institucional",
+            "width": "30%",
+            "paddingRight": 8,
+            "paddingLeft": 5
+        },
+        "children": [
+            "flex-layout.row#quem-somos",
+            "flex-layout.row#privacidade",
+            "flex-layout.row#seguranca",
+            // "flex-layout.row#revendedor",
+            "flex-layout.row#entrega",
+            "flex-layout.row#pagamento",
+            "flex-layout.row#troca",
+            "flex-layout.row#perguntas",
+            "flex-layout.row#fale-conosco"
+        ]
+    },
+    "flex-layout.row#quem-somos": {
+        "props": {
+            "blockClass": "inst-nav"
+        },
+        "children": ["link#quem-somos"]
+    },
+    "link#quem-somos": {
+        "props": {
+            "blockClass": "inst-nav",
+            "href": "/sobre",
+            "label": "Quem Somos",
+            "displayMode": "button"
+        }
+    },
+    "flex-layout.row#entrega": {
+        "props": {
+            "blockClass": "inst-nav"
+        },
+        "children": ["link#entrega"]
+    },
+    "flex-layout.row#privacidade": {
+        "props": {
+            "blockClass": "inst-nav"
+        },
+        "children": ["link#privacidade"]
+    },
+    "link#privacidade": {
+        "props": {
+            "blockClass": "inst-nav",
+            "href": "/privacidade",
+            "label": "Política de Privacidade",
+            "displayMode": "button"
+        }
+    },
+    "flex-layout.row#seguranca": {
+        "props": {
+            "blockClass": "inst-nav"
+        },
+        "children": ["link#seguranca"]
+    },
+    "link#seguranca": {
+        "props": {
+            "blockClass": "inst-nav",
+            "href": "/seguranca",
+            "label": "Segurança",
+            "displayMode": "button"
+        }
+    },
+    "flex-layout.row#revendedor": {
+        "props": {
+            "blockClass": "inst-nav"
+        },
+        "children": ["link#entrega"]
+    },
+    "link#entrega": {
+        "props": {
+            "blockClass": "inst-nav",
+            "href": "/entrega",
+            "label": "Entrega",
+            "displayMode": "button"
+        }
+    },
+    "flex-layout.row#pagamento": {
+        "props": {
+            "blockClass": "inst-nav"
+        },
+        "children": ["link#pagamento"]
+    },
+    "link#pagamento": {
+        "props": {
+            "blockClass": "inst-nav",
+            "href": "/pagamento",
+            "label": "Pagamento",
+            "displayMode": "button"
+        }
+    },
+    "flex-layout.row#troca": {
+        "props": {
+            "blockClass": "inst-nav"
+        },
+        "children": ["link#troca"]
+    },
+    "link#troca": {
+        "props": {
+            "blockClass": "inst-nav",
+            "href": "/troca-e-devolucao",
+            "label": "Trocas e Devoluções",
+            "displayMode": "button"
+        }
+    },
+    "flex-layout.row#perguntas": {
+        "props": {
+            "blockClass": "inst-nav"
+        },
+        "children": ["link#perguntas"]
+    },
+    "link#perguntas": {
+        "props": {
+            "blockClass": "inst-nav",
+            "href": "/perguntas",
+            "label": "Perguntas Frequentes",
+            "displayMode": "button"
+        }
+    },
+    "flex-layout.row#fale-conosco": {
+        "props": {
+            "blockClass": "inst-nav"
+        },
+        "children": ["link#fale-conosco"]
+    },
+    "link#fale-conosco": {
+        "props": {
+            "blockClass": "inst-nav",
+            "href": "/fale-conosco",
+            "label": "Fale Conosco",
+            "displayMode": "button"
+        }
+    }
+}

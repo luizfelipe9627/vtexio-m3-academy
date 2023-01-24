@@ -1,0 +1,27 @@
+.drawerContent {
+    position: relative;
+}
+.closeIconContainer {
+    position: absolute;
+    right: 0;
+    justify-content: flex-end;
+}
+
+.drawerContent .childrenContainer {
+    padding: 25px 16px 0;
+}
+.openIconContainer {
+    background: url(assets/svgs/ham.svg) no-repeat center center !important;
+    background-size: contain;
+}
+.openIconContainer .menuIcon {
+    opacity: 0;
+}
+
+.closeIconButton {
+    background: url(assets/svgs/close-icon.svg) no-repeat center center !important;
+    background-size: contain;
+}
+.closeIconButton .closeIcon {
+    opacity: 0;
+}

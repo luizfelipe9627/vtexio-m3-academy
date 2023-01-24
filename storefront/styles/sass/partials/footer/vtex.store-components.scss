@@ -1,0 +1,115 @@
+/* M3 NEWSLETTER */
+/* ------------------------------------------------------------------------  */
+/* M3 NEWSLETTER */
+/* ------------------------------------------------------------------------  */
+.newsletter--m3-newsletter {
+  margin-top: 102px;
+  border: none;
+  background: $color-gray4;
+}
+
+.form--m3-newsletter {
+  text-align: left;
+}
+
+.container--m3-newsletter {
+  padding: 17px 0;
+  display: flex;
+  justify-content: center;
+}
+.inputGroup--m3-newsletter {
+  padding-top: 5px;
+}
+.inputGroup--m3-newsletter :global(.vtex-input){
+  max-width: 270px;
+}
+.inputGroup--m3-newsletter :global(.vtex-input-prefix__group) {
+  border: 2px solid $color-gray4;
+  height: 42px;
+  max-width: 270px;
+  border-radius: 5px;
+
+}
+@media screen and (max-width: 1050px){
+  .inputGroup--m3-newsletter :global(.vtex-input){
+    max-width: 100%;
+  }
+  .inputGroup--m3-newsletter :global(.vtex-input-prefix__group) {
+    max-width: 100%!important;
+    height: 50px;
+  }
+  .inputGroup--m3-newsletter {
+    padding-top: 12px;
+  }
+  .buttonContainer--m3-newsletter{
+    padding-top: 12px;
+  }
+}
+.buttonContainer--m3-newsletter :global(.vtex-button) {
+  background: #373835;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 17px;
+  letter-spacing: 0.05em;
+  color: $color-white;
+  transition: all 0.22s ease-in;
+  border: none;
+  border-radius: 0;
+}
+
+.buttonContainer--m3-newsletter :global(.vtex-button):hover {
+  background: #303030;
+}
+.label--m3-newsletter {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.05em;
+  color: $color-white;
+}
+
+@media screen and(max-width: 1050px){
+  .label--m3-newsletter {
+    text-align: left;
+    margin-bottom: 1rem;
+  }
+}
+
+@media only screen and (max-width: 1025px) {
+  .form--m3-newsletter {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .buttonContainer--m3-newsletter :global(.vtex-button) {
+    width: 100%;
+    line-height: 36px;
+  }
+}
+
+.imageElement--vtex-pci {
+  padding: 0px 10px;
+  position: relative;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--footer-payment-badges)
+  :global(.vtex-flex-layout-10-x-stretchChildrenWidth) {
+  border: 1px solid red;
+}
+.imageElement--vtex-pci::after {
+  content: "";
+  display: block;
+  height: 10px;
+  width: 2px;
+  background: black;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+

@@ -1,0 +1,97 @@
+/* M3 FOOTER  */
+/* ---------------------------------------------------------------------------------------------------------------- */
+.flexRow--footer-links {
+    background-color: #f0f0f0;
+    padding: 24px 0 24px 0;
+}
+
+.flexRowContent--footer-links {
+    max-width: 830px;
+    width: 830px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.flexRowContent--footer-bottom {
+    width: calc(1280px - 64px);
+    /* max-width: calc(1280px - 64px); */
+    max-width: 100%;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.flexRowContent--footer-m3-powered-by {
+    display: flex;
+    justify-content: flex-end;
+    :global(.vtex-store-components-3-x-imageElementLink),
+    :global(.vtex-rich-text-0-x-wrapper--footer-bottom-text) {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+.flexRowContent--footer-m3-powered-by .stretchChildrenWidth {
+    width: auto !important;
+    margin: 0 4px;
+    align-items: center;
+}
+
+.flexRowContent--footer-payment-badges {
+    display: flex;
+    align-items: center;
+}
+.flexRowContent--footer-payment-badges .stretchChildrenWidth {
+    width: fit-content !important;
+    margin: 0 7px;
+}
+
+.flexRow--footer-vtex-pci-badge {
+    position: relative;
+}
+
+.flexRow--footer-vtex-pci-badge::after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 24px;
+    width: 1px;
+    background: $color-gray4;
+    left: 0;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.flexRow--footer-links-mobile {
+    background-color: #f0f0f0;
+    padding: 32px 0px;
+}
+
+.flexRow--social-networks {
+    background-color: #f0f0f0;
+    padding-bottom: 31px;
+}
+
+@media only screen and (max-width: 1025px) {
+    .flexRow--footer-payment-badges {
+        background: white;
+        margin: 0;
+        padding: 20px 0;
+    }
+    .flexRowContent--footer-payment-badges {
+        justify-content: center;
+    }
+
+    .flexRow--footer-m3-powered-by {
+        background: white;
+    }
+
+    .flexRowContent--footer-m3-powered-by {
+        justify-content: center;
+    }
+
+    .flexRow--footer-links-mobile {
+        padding: 20px 27px 0;
+    }
+    .flexRow--social-networks {
+        padding: 24px 27px;
+    }
+}

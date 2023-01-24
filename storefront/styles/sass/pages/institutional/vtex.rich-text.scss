@@ -1,0 +1,112 @@
+
+/* INSTITUCIONAL  */
+
+.headingLevel1--institucional {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 36px;
+  color: #666666;
+  margin: 0 0 16px;
+}
+
+.paragraph--institucional {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: #666666;
+  margin: 0 0 16px;
+}
+.wrapper--institucional{
+  max-width: 100%;
+}
+.image--institucional{
+  margin: 0 auto;
+  display: block;
+}
+.link--institucional{
+  color:#292929;
+}
+
+.link--institucional:hover{
+  font-weight: bold;
+}
+
+.headingLevel4--institucional{
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 20px;
+  color: #666666;
+  margin-bottom: 0;
+}
+
+.headingLevel3--institucional{
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 36px;
+  margin: 0 0 16px;
+  color: #292929;
+}
+
+.paragraph--fc-form-title{
+  font-family: 'Roboto', sans-serif;
+font-style: normal;
+font-weight: 700;
+font-size: 28px;
+line-height: 36px;
+color: #666666;
+}
+
+/**Institucional*/
+.wrapper--institucional-titulo{
+  font-family: "Roboto",sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.1em;
+  color: #292929;
+  text-transform: uppercase;
+}
+.container--breadcrumb-institucional-item{
+  margin-left: 8px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: $color-gray4;
+  text-transform: uppercase;
+}
+.container--breadcrumb-institucional-item::before{
+  content: '';
+  background: url(assets/svgs/minor-arrow.svg);
+  display: block;
+  color: $color-gray4;
+  margin-top: 14px;
+  margin-top: 16px;
+  margin-right: 8px;
+  height: 8px;
+  width: 8px;
+  
+}
+.headingLevel2--institucional{
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  color: #292929
+}
+@media screen and (max-width: 1024px){
+  .headingLevel2--institucional{
+    text-align: center;
+  }
+}

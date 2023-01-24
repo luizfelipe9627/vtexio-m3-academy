@@ -1,0 +1,184 @@
+.MenuDrawerHamIcon {
+    position: absolute;
+    top: 40px;
+    left: 0px;
+    border: none;
+    outline: none;
+    background: transparent;
+    z-index: 2;
+}
+
+.MenuDrawer {
+    position: fixed;
+    width: 100vw;
+    max-width: 342px;
+    height: 100%;
+    top: 0;
+    background: white;
+    z-index: 10;
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+    overflow: hidden;
+}
+
+.wrapMenuItemMobile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: transparent !important;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.wrapMenuItemMobile:focus, .wrapMenuItemMobile:visited, .wrapMenuItemMobile:active {
+    background: none !important;
+    outline: none;
+}
+.wrapMenuItemMobile .wrapImageMobile {
+    width: 27px;
+    height: 27px;
+}
+.wrapMenuItemMobile,
+.wrapMenuItemMobile .menuItemMobile {
+    cursor: pointer;
+    width: 100%;
+}
+.wrapImageMobile > img {
+    object-fit: contain;
+}
+
+.MenuDrawerOverlay {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(239, 239, 239, 0.8);
+}
+
+.MenuDrawerLinks {
+    flex-grow: 1;
+    overflow: auto;
+    padding: 0 15px;
+    max-height: 350px;
+}
+@media(min-height: 650px) {
+    .MenuDrawerLinks {
+        max-height: 450px
+    }
+}
+.MenuDrawerContent {
+    position: relative;
+    height: auto;
+    /* height: calc(100% - 114px); */
+    display: flex;
+    flex-direction: column;
+}
+
+.MenuDrawerHidden {
+    left: -100%;
+    opacity: 0;
+}
+
+.MenuDrawerShown {
+    left: 0;
+    opacity: 1;
+}
+
+.icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: 0 0 6px;
+}
+.icon .line1 {
+    margin: 0 0 16px;
+}
+.icon .line1,
+.icon .line2 {
+    width: 28px;
+    height: 4px;
+    background: #292929;
+    border-radius: 30px;
+}
+.icon .line1::after {
+    content: "";
+    display: block;
+    float: right;
+    width: 100%;
+    height: 100%;
+    background: #292929;
+    margin: 10px 0 0;
+    border-radius: 30px;
+    transition: width 0.2s ease;
+}
+
+/* OFERTAS DIA */
+.offerLinkMobile {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.offerLinkMobile .wrapMenuItem {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px 0 0 5px;
+}
+.offerLinkMobile .wrapMenuItem .wrapImage {
+    width: 35px;
+    height: 35px;
+}
+.offerLinkMobile .wrapMenuItem .menuItem {
+    list-style: none;
+    margin: 0;
+}
+.offerLinkMobile .menuItemMobile .menuItemMobileLink {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #FF0000;
+    margin: 0;
+}
+/* FIM OFERTAS DIA */
+.Help{
+    padding: 20px;
+    background:#f2f2f2;
+}
+.HelpText{
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    text-transform: uppercase;
+    line-height: 13px;
+    letter-spacing: 0.05em;
+    color: #191818;
+}
+.HelpNumber {
+    display: flex;
+    align-items: center;
+    grid-gap: 10px;
+}
+.HelpNumber a{
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 13px;
+    letter-spacing: 0.05em;
+    color: #191818;
+    text-decoration: none;
+}
+.Helpwr{
+    width: 15px;
+    height: 15px;
+    background: orange;
+}

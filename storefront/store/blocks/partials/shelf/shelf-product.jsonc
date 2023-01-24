@@ -1,0 +1,71 @@
+{
+    "product-summary.shelf#m3-shelf-product": {
+        "props": {
+            "blockClass": "m3-shelf-product"
+        },
+        "children": [
+            "product-summary-image#m3-shelf",
+            "product-summary-name#m3-shelf",
+            "flex-layout.row#m3-shelf-badges",
+            "product-summary-space",
+            "product-list-price#m3-shelf",
+            "flex-layout.row#m3-shelf-product-price-savings",
+            "product-installments#m3-shelf",
+            "add-to-cart-button#m3-shelf",
+            "product-specification-badges"
+        ]
+    },
+
+    "product-summary-image#m3-shelf": {
+        "props": {
+            "blockClass": "m3-shelf-product-image",
+            "showBadge": true,
+            "height": 220
+        }
+    },
+    "flex-layout.row#m3-shelf-product-price-savings": {
+        "props": {
+            "blockClass": "m3-shelf-price-selling-savings",
+            "colGap": 2,
+            "preserveLayoutOnMobile": true,
+            "preventHorizontalStretch": true,
+            "marginBottom": 4
+        },
+        "children": [
+            "product-selling-price#m3-shelf-selling-price",
+            "product-price-savings#m3-shelf-saving-price"
+        ]
+    },
+    "product-selling-price#m3-shelf-selling-price": {
+        "props": {
+            "blockClass": "m3-shelf"
+        }
+    },
+    "product-summary-name#m3-shelf": {
+        "props": {
+            "blockClass": "m3-shelf"
+        }
+    },
+    "product-price-savings#m3-shelf-saving-price": {
+        "props": {
+            "blockClass": "m3-shelf"
+        }
+    },
+    "product-list-price#m3-shelf": {
+        "props": {
+            "blockClass": "m3-shelf"
+        }
+    },
+    "product-installments#m3-shelf": {
+        "props": {
+            "blockClass": "m3-shelf"
+        }
+    },
+    "add-to-cart-button#m3-shelf": {
+        "props": {
+            "blockClass": "m3-shelf",
+            "buyButtonText": "Adicionar ao carrinho"
+            // "buyButtonBehavior": "alwaysGoToProduct"
+        }
+    }
+}

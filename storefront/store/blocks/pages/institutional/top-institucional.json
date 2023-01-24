@@ -1,0 +1,56 @@
+{
+    "flex-layout.row#institucional-breadcrumb": {
+        "props": {
+            "blockClass": "institucional-breadcrumb-wrapper",
+            "preventVerticalStretch": true,
+            "preventHorizontalStretch": true
+        },
+        "children": [
+            "flex-layout.col#institucional-breadcrumb-item-01",
+            "flex-layout.col#institucional-breadcrumb-item-02"
+        ]
+    },
+    "flex-layout.col#institucional-breadcrumb-item-01": {
+        "props": {
+            "blockClass": "breadcrumb-image-wrapper",
+            "width": 20
+        },
+        "children": ["image#house"]
+    },
+    "flex-layout.col#institucional-breadcrumb-item-02": {
+        "props": {
+            "blockClass": "breadcrumb-text-wrapper",
+            "width": 20
+        },
+        "children": ["rich-text#breadcrumb-institucional"]
+    },
+    "image#house": {
+        "props": {
+            "src": "assets/svgs/house.svg",
+            "maxHeight": 16,
+            "link": "/"
+        }
+    },
+    "rich-text#breadcrumb-institucional": {
+        "props": {
+            "text": "institucional",
+            "textAlignment": "LEFT",
+            "textPosition": "LEFT",
+            "blockClass": "breadcrumb-institucional-item"
+        }
+    },
+    "flex-layout.row#institucional-title": {
+        "children": ["rich-text#titulo-institucional"],
+        "props": {
+            "blockClass": "institucional-titulo-wrapper"
+        }
+    },
+    "rich-text#titulo-institucional": {
+        "props": {
+            "text": " Institucional",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "blockClass": "institucional-titulo"
+        }
+    }
+}

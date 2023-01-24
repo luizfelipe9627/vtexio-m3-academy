@@ -1,0 +1,73 @@
+
+/* FOOTER LINKS  */
+/* ------------------------------------------------------------------------------------ */
+
+.menuContainerNav--footer-menu-links {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $color-white;
+}
+
+.styledLinkContainer--footer-menu-item {
+  margin: 0;
+}
+
+.styledLink--footer-menu-item {
+  font-family: 'Roboto', sans-serif;
+  display: inline-block;
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: capitalize;
+  color: #7D7D7D;
+  margin-bottom: 9px;
+  font-weight: normal;
+}
+.styledLink--footer-menu-item--email {
+  text-transform: lowercase;
+}
+.styledLink--footer-menu-title {
+  font-weight: 500;
+}
+
+.styledLink--footer-menu-underline {
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.submenuAccordion--footer {
+  padding-left: 0px;
+}
+
+.styledLinkContainer--footer-accordion-title {
+  margin: 0;
+}
+
+@media only screen and (max-width: 1025px) {
+  .styledLinkContent--footer-accordion-title {
+    font-weight: 600;
+    color:#7D7D7D !important;
+  }
+  .submenuAccordion--footer{
+    padding-left: 1rem;
+  }
+  .accordionIcon--footer-accordion-title--isClosed {
+    color:#7D7D7D !important;
+  }
+
+  .accordionIcon--footer-accordion-title--isOpen {
+    color:#7D7D7D !important;
+  }
+
+  .menuItem--footer-accordion-title {
+    padding: 12px 0;
+  }
+  .accordionIcon--header-menu-accordion-title--isClosed, .accordionIcon--header-menu-accordion-title--isOpen {
+    font-size: 20px;
+    color: #292929;
+    font-weight: 300;
+  }
+}

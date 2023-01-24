@@ -1,0 +1,422 @@
+.filter__container--acucar,
+.filter__container--valor-energetico,
+.filter__container--sodio,
+.filter__container--proteinas,
+.filter__container--porcao,
+.filter__container--gorduras-totais,
+.filter__container--gorduras-trans,
+.filter__container--gorduras-saturadas,
+.filter__container--carboidratos,
+.filter__container--fibra-alimentar {
+    display: none;
+}
+.filterAccordionItemBox--acucar,
+.filterAccordionItemBox--valor-energetico,
+.filterAccordionItemBox--sodio,
+.filterAccordionItemBox--proteinas,
+.filterAccordionItemBox--porcao,
+.filterAccordionItemBox--gorduras-totais,
+.filterAccordionItemBox--gorduras-trans,
+.filterAccordionItemBox--gorduras-saturadas,
+.filterAccordionItemBox--carboidratos,
+.filterAccordionItemBox--fibra-alimentar {
+    display: none;
+}
+.searchResultContainer {
+    max-width: 1045px;
+    margin-bottom: 110px;
+}
+
+.gallery {
+    padding-left: 0;
+}
+
+.searchNotFoundOops {
+    display: none;
+}
+.searchNotFoundInfo {
+    color: #7d7d7d;
+    font-weight: 700;
+    padding: 0;
+}
+.searchNotFoundWhatToDoDotsContainer {
+    font-weight: 400;
+}
+.searchNotFound {
+    text-align: center;
+    justify-content: left;
+    margin-left: 64px;
+}
+.searchNotFoundWhatToDoDots {
+    list-style: none;
+}
+
+.galleryTitle--layout {
+    color: #7d7d7d;
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0.1em;
+    margin: 24px 0;
+    text-transform: uppercase;
+}
+.filterPopupTitle {
+    color: #292929;
+    text-transform: uppercase;
+}
+.orderByText {
+    color: $color-gray4;
+}
+.totalProducts--layout {
+    border: none;
+    text-align: left;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    font-variant: small-caps;
+    color: #7d7d7d;
+}
+.orderByOptionsContainer {
+    width: 172px;
+    min-width: 172px;
+}
+.orderByOptionItem:hover {
+    background: #e5e5e5;
+}
+.orderByButton {
+    border: 0;
+}
+.filterMessage,
+.filterTitle {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #7d7d7d;
+}
+
+.filter__container,
+.categoryItemName {
+    padding: 5px 0;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 100%;
+    color: #7d7d7d;
+    border-color: #e5e5e5 !important;
+}
+
+.filterItem {
+    margin: 7px 0;
+}
+
+.filterItem :global(.vtex__icon-check) {
+    opacity: 0;
+}
+.filterItem--selected :global(.vtex-checkbox__label) {
+    color: #7d7d7d !important;
+}
+.filterItem--selected :global(.vtex-checkbox__box) {
+    display: block;
+    width: 8px;
+    height: 8px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #7d7d7d !important;
+    border-radius: 2px;
+}
+.filterItem :global(.vtex-checkbox__inner-container) {
+    background: white;
+    border: 1px solid $color-gray4;
+    box-sizing: border-box;
+    border-radius: 2px;
+}
+.filterTemplateOverflow :global(.vtex-slider__base-internal),
+.filterTemplateOverflow :global(.vtex-slider__selector) {
+    background: #292929;
+}
+.filter__container--selectedFilters .filterSelected {
+    display: none;
+}
+.filter__container--selectedFilters .filterTemplateOverflow {
+    padding: 1rem 0;
+}
+.filter__container--selectedFilters :global(.vtex-checkbox__label) {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: $color-gray4;
+}
+.filter__container--selectedFilters
+    .selectedFilterItem
+    :global(.vtex-checkbox__line-container) {
+    flex-direction: row-reverse;
+}
+.filter__container--selectedFilters
+    .selectedFilterItem
+    :global(.vtex-checkbox__box-wrapper) {
+    content: url(assets/svgs/filter-remove.svg);
+}
+.filter__container--selectedFilters
+    .selectedFilterItem
+    :global(.vtex-checkbox__inner-container) {
+    border: none;
+    background: transparent;
+    border-radius: none;
+}
+
+.sidebar {
+    width: 311px;
+}
+
+.filterAccordionBreadcrumbs {
+    padding: 16px 12px;
+}
+
+.accordionFilter {
+    text-transform: uppercase;
+}
+
+.accordionFilterContainer {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.accordionFilterContent {
+    padding: 15px 0;
+}
+
+.accordionFilterItemTitle {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #7d7d7d;
+}
+.accordionFilterItem {
+    padding: 0;
+}
+.accordionFilterItemOptions :global(.vtex-checkbox__inner-container) {
+    background: $color-white !important;
+    border-color: $color-white !important;
+}
+.accordionFilterItemOptions :global(.vtex__icon-check) {
+    background: #7d7d7d !important;
+    color: #7d7d7d;
+    border-radius: 2px;
+    display: block;
+    height: 8px;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 8px;
+}
+.accordionFilterItemOptions :global(.vtex-checkbox__box-wrapper) {
+    border: 1px solid $color-gray4;
+    border-radius: 2px;
+}
+
+.filterButtonsBox {
+    border: none !important;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-bottom: 28px;
+    height: 120px;
+}
+.filterBreadcrumbsText {
+    font-weight: 600;
+    font-size: 20px;
+    font-variant: small-caps;
+    line-height: 24px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #292929;
+}
+.filterApplyButtonWrapper,
+.filterClearButtonWrapper {
+    width: 100%;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.filterClearButtonWrapper :global(.vtex-button__label) {
+    display: none;
+}
+.filterClearButtonWrapper :global(.vtex-button) {
+    background: $color-gray4;
+    color: $color-white;
+    border: none !important;
+    border-radius: 5px;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 0.05em;
+    margin-bottom: 8px;
+}
+.filterClearButtonWrapper :global(.vtex-button)::after {
+    content: "remover filtro";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: $color-white;
+}
+.filterApplyButtonWrapper :global(.vtex-button) {
+    color: $color-white;
+    background: #292929;
+    border: none !important;
+    border-radius: 5px;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-variant: small-caps;
+    font-weight: 500;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    width: 100%;
+}
+
+.buttonShowMore :global(.vtex-button) {
+    font-family: "Roboto", sans-serif;
+    background: #292929;
+    border-radius: 5px;
+    border: none;
+    max-width: 259px;
+    width: 100%;
+    display: block;
+    line-height: 48px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-top: 20px;
+    color: $color-white;
+}
+
+@media only screen and (max-width: 1024px) {
+    .caretIcon {
+        width: 16px;
+    }
+    .galleryTitle--layout {
+        text-align: center;
+        margin-bottom: 32px;
+    }
+
+    :global(.vtex-flex-layout-0-x-flexRow--searchinfomobile)
+        :global(.vtex-store-components-3-x-container) {
+        padding: 0;
+    }
+    :global(.vtex-flex-layout-0-x-flexRow--searchinfomobile) {
+        border-top: 1px solid #e5e5e5;
+        border-bottom: 1px solid #e5e5e5;
+        position: relative;
+    }
+
+    :global(.vtex-flex-layout-0-x-flexRow--searchinfomobile)::after {
+        content: "";
+        display: block;
+        position: absolute;
+        height: 100%;
+        width: 1px;
+        background-color: #e5e5e5;
+        top: 0;
+        left: 50%;
+    }
+    .totalProducts--layout {
+        text-align: center;
+    }
+    .filterPopupTitle {
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: right;
+        text-transform: uppercase;
+        color: #7d7d7d;
+    }
+    .buttonShowMore :global(.vtex-button) {
+        max-width: 343px;
+    }
+    .filters--layout .filterPopupArrowIcon {
+        content: url(assets/svgs/filter-icon.svg);
+        color: $color-gray4;
+    }
+    .filters--layout .filterPopupArrowIcon .filterIcon {
+        opacity: 0;
+    }
+
+    .filterBreadcrumbsItemName {
+        color: #7d7d7d;
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        font-variant: small-caps;
+        font-weight: 600;
+        font-size: 20px;
+        letter-spacing: 0.1em;
+        line-height: 24px;
+        text-transform: uppercase;
+    }
+
+    .filterAccordionItemBox {
+        border: none;
+        height: auto;
+        margin: 4px 0;
+        min-height: 16px;
+    }
+    .filterAccordionItemBox :global(.vtex-checkbox__line-container) {
+        align-items: center;
+    }
+    .filterAccordionItemBox :global(.vtex-checkbox__label) {
+        color: #7d7d7d;
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        font-weight: normal;
+        text-transform: capitalize;
+        font-size: 12px;
+        /* line-height: 100%; */
+        margin-left: 8px;
+    }
+
+    /* .accordionFilterItemTag :global(div) {
+    background: purple;
+  } */
+    .searchNotFound {
+        margin: 0;
+    }
+    .orderByButton .orderByText {
+        font-family: "Roboto", sans-serif;
+        display: inline !important;
+        font-size: 13px;
+        line-height: 19px;
+        /* text-align: center; */
+        color: #7d7d7d;
+    }
+    .orderByButton .filterPopupTitle {
+        font-size: 0;
+    }
+    .orderByButton .filterPopupArrowIcon {
+        display: block;
+        margin-bottom: 4px;
+        padding: 0 4px 0 4px;
+    }
+
+    .buttonShowMore :global(.vtex-button__label):focus {
+        outline-color: transparent;
+    }
+}
+@media screen and (max-width: 475px) {
+    .filterPopupTitle {
+        font-size: 12px;
+    }
+    .layoutSwitcher {
+        padding-left: 2px !important;
+    }
+    .layoutSwitcher :global(.vtex-button__label) {
+        padding-left: 0;
+    }
+}

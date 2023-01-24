@@ -1,0 +1,37 @@
+{
+    "store.custom#pagamento": {
+        "blocks": [
+            "flex-layout.row#institucional-breadcrumb",
+            "flex-layout.row#institucional-title",
+            "flex-layout.row#wrapper-pagamento"
+        ]
+    },
+    "flex-layout.row#wrapper-pagamento": {
+        "children": [
+            "flex-layout.col#inst-nav",
+            "flex-layout.col#institucional--pagamento"
+        ],
+        "props": {
+            "blockClass": "institucional-wrapper"
+        }
+    },
+    "flex-layout.col#institucional--pagamento": {
+        "props": {
+            "blockClass": "institucional-main-row"
+        },
+        "children": ["flex-layout.row#institucional-pagamento"]
+    },
+    "flex-layout.row#institucional-pagamento": {
+        "children": ["rich-text#pagamento"]
+    },
+    "rich-text#pagamento": {
+        "props": {
+            "textAlignment": "LEFT",
+            "textPosition": "LEFT",
+            "text": "## Pagamento \n Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est",
+            "textColor": "",
+            "font": "t-heading-5",
+            "blockClass": "institucional"
+        }
+    }
+}

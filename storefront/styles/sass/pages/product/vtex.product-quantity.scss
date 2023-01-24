@@ -1,0 +1,50 @@
+.quantitySelectorTitle--m3-custom-quantity {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: #7d7d7d !important;
+}
+
+.quantitySelectorTitle--m3-custom-quantity::after {
+  content: ':'
+}
+
+.quantitySelectorContainer--m3-custom-quantity {
+  margin-bottom: 5px;
+}
+.quantitySelectorStepper :global(.vtex-numeric-stepper__input) {
+  width: 46px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  color: #7d7d7d;
+  height: 24px;
+  border-color: #f0f0f0;
+
+  outline: none;
+}
+
+.quantitySelectorStepper :global(.vtex-numeric-stepper__plus-button),
+.quantitySelectorStepper :global(.vtex-numeric-stepper__minus-button) {
+  border-color: #f0f0f0;
+  width: 24px;
+  height: 24px;
+  font-weight: bold;
+  border: 2px solid #F0F0F0;
+
+}
+.quantitySelectorStepper :global(.vtex-numeric-stepper__plus-button):focus,
+.quantitySelectorStepper :global(.vtex-numeric-stepper__minus-button):focus {
+  outline-color: #f0f0f0;
+}
+
+@media only screen and (max-width: 640px) {
+  .quantitySelectorContainer--m3-custom-quantity {
+    margin-top: 5px;
+  }
+}

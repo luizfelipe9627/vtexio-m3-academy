@@ -1,0 +1,162 @@
+{
+    "vtex.menu@2.x:menu#category-menu": {
+        "props": {
+            "blockClass": "menu-links",
+            "items": [
+                {
+                    "id": "menu-item-shop",
+                    "type": "custom",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "blockClass": ["dynamic"],
+                        "type": "internal",
+                        "href": "#",
+                        "noFollow": false,
+                        "tagTitle": "Shop",
+                        "text": "Shop"
+                    }
+                },
+                {
+                    "id": "menu-item-about-us",
+                    "type": "custom",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "blockClass": ["dynamic"],
+                        "type": "internal",
+                        "href": "/about-us",
+                        "noFollow": false,
+                        "tagTitle": "about-us",
+                        "text": "About Us"
+                    }
+                }
+            ]
+        },
+        "children": [
+            "menu-item#department-01",
+            "menu-item#category-Camisas",
+            "menu-item#category-baby-doll",
+            "menu-item#category-vestidos"
+        ]
+    },
+    "menu-item#department-01": {
+        "props": {
+            "blockClass": ["menu-links-item"],
+            "id": "menu-item-department-01",
+            "type": "category",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "categoryId": 1,
+                "type": "internal",
+                "href": "/Departamento",
+                "noFollow": true,
+                "tagTitle": "Departamento",
+                "text": "Departamento"
+            }
+        },
+        "blocks": ["vtex.menu@2.x:submenu#departamento"]
+    },
+    "menu-item#category-Camisas": {
+        "props": {
+            "blockClass": "menu-links-item",
+            "id": "menu-item-category-Camisas",
+            "type": "category",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "categoryId": 1,
+                "text": "Camisas"
+            }
+        }
+    },
+    "menu-item#category-baby-doll": {
+        "props": {
+            "blockClass": "menu-links-item",
+            "id": "menu-item-category-baby-doll",
+            "type": "category",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "categoryId": 1,
+                "text": "Baby doll"
+            }
+        }
+    },
+    "menu-item#category-vestidos": {
+        "props": {
+            "blockClass": "menu-links-item",
+            "id": "menu-item-category-vestidos",
+            "type": "category",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "categoryId": 1,
+                "text": "Vestidos"
+            }
+        }
+    },
+    "menu-item#category-departamento": {
+        "props": {
+            "blockClass": "menu-links-item",
+            "id": "menu-item-category-departamento",
+            "type": "category",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "categoryId": 1,
+                "text": "departamento"
+            }
+        },
+        "blocks": ["vtex.menu@2.x:submenu#departamento"]
+    },
+    "menu-item#sign-up-&-sign-in": {
+        "props": {
+            "blockClass": ["menu-links-item"],
+            "id": "menu-item-sign-up-&-sign-in",
+            "type": "category",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/login",
+                "noFollow": true,
+                "tagTitle": "/login",
+                "text": "ENTRE OU CADASTRA-SE"
+            }
+        }
+    },
+    "menu-item#my-account": {
+        "props": {
+            "blockClass": ["menu-links-item"],
+            "id": "menu-item-my-account",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/account",
+                "noFollow": true,
+                "tagTitle": "/account",
+                "text": "MINHA CONTA"
+            }
+        }
+    },
+    "menu-item#my-orders": {
+        "props": {
+            "blockClass": ["menu-links-item"],
+            "id": "menu-item-my-orders",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/my-orders",
+                "noFollow": true,
+                "tagTitle": "/my-orders",
+                "text": "MEUS PEDIDOS"
+            }
+        }
+    }
+}

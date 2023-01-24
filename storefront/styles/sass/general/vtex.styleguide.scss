@@ -1,0 +1,12 @@
+/* .input, .input::-webkit-input-placeholder{
+  display: none;
+  font-family: "Roboto";
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 16px;
+color: $color-gray4;
+} */
+:global(.vtex-dropdown__button){
+  width: 93px;
+}

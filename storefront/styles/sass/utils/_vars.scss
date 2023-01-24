@@ -1,0 +1,32 @@
+/* Colors */
+$color-black: #292929;
+
+$color-white: #fff;
+
+$color-gray: #6c6c6c;
+$color-gray2: #7d7d7d;
+$color-gray3: #f0f0f0;
+$color-gray4: #c4c4c4;
+$color-gray5: #e5e5e5;
+
+$color-blue: #4267b2;
+
+$color-green: #4caf50;
+
+/* Grid breakpoints */
+$grid-breakpoints: (
+	xs: 0,
+	cstm: 400,
+	sm: 576px,
+	md: 768px,
+	lg: 992px,
+	xl: 1200px
+) !default;
+
+$z-index: (
+	level1: 5,
+	level2: 10,
+	level3: 15,
+	level4: 20,
+	level5: 25
+) !default;

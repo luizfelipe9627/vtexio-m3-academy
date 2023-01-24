@@ -1,0 +1,222 @@
+/**
+ * @reference (https://github.com/engageinteractive/core/blob/master/src/scss/utility/_mixins.scss)
+ */
+@mixin push--auto {
+	margin: {
+		left: auto;
+		right: auto;
+	}
+}
+@mixin pseudo($display: block, $pos: absolute, $content: ''){
+	content: $content;
+	display: $display;
+	position: $pos;
+}
+
+
+@mixin position($top: false,$right: false, $bottom:false, $left: false){
+	@if( $top ){
+		top:$top;
+	}
+	@if( $right ){
+		right:$right;
+	}
+	@if( $left ){
+		left:$left;
+	}
+	@if( $bottom ){
+		bottom:$bottom;
+	}
+}
+
+@mixin responsive-ratio($x,$y, $pseudo: false) {
+	$padding: unquote( ( $y / $x ) * 100 + '%' );
+	@if $pseudo {
+		&:before {
+			@include pseudo($pos: relative);
+			width: 100%;
+			padding-top: $padding;
+		}
+	} @else {
+		padding-top: $padding;
+	}
+}
+
+@mixin css-triangle($color, $direction, $size: 6px, $position: absolute, $round: false){
+	@include pseudo($pos: $position);
+	width: 0;
+	height: 0;
+	@if $round {
+		border-radius: 3px;
+	}
+	@if $direction == down {
+		border-left: $size solid transparent;
+		border-right: $size solid transparent;
+		border-top: $size solid $color;
+		margin-top: 0 - round( $size / 2.5 );
+	} @else if $direction == up {
+		border-left: $size solid transparent;
+		border-right: $size solid transparent;
+		border-bottom: $size solid $color;
+		margin-bottom: 0 - round( $size / 2.5 );
+	} @else if $direction == right {
+		border-top: $size solid transparent;
+		border-bottom: $size solid transparent;
+		border-left: $size solid $color;
+		margin-right: -$size;
+	} @else if  $direction == left {
+		border-top: $size solid transparent;
+		border-bottom: $size solid transparent;
+		border-right: $size solid $color;
+		margin-left: -$size;
+	}
+}
+
+@mixin input-placeholder {
+	&.placeholder { @content; }
+	&:-moz-placeholder { @content; }
+	&::-moz-placeholder { @content; }
+	&:-ms-input-placeholder { @content; }
+	&::-webkit-input-placeholder { @content; }
+}
+
+@mixin hardware($backface: true, $perspective: 1000) {
+	@if $backface {
+		backface-visibility: hidden;
+	}
+	perspective: $perspective;
+}
+
+@mixin truncate($truncation-boundary) {
+	max-width: $truncation-boundary;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+@mixin appearance($val: none) {
+	-webkit-appearance: $val;
+	-moz-appearance: $val;
+	appearance: $val;
+}
+
+
+@mixin separador($cor,$p-right: 5px) {
+	position: relative;
+	padding-right: $p-right;
+	display: inline-block;
+	&:after{
+		content:' ';
+		display: block;
+		width: 1px;
+		height: 100%;
+		position: absolute;
+		top: 50%;
+		right: 0;
+		transform: translateY(-50%);
+		background-color: $cor;
+	}
+	&:last-child:after{
+		display: none;
+	}
+}
+
+@mixin mq($width, $type: min) {
+	@if map_has_key($grid-breakpoints, $width) {
+		$width: map_get($grid-breakpoints, $width);
+		@if $type == max {
+			$width: $width - 1px;
+		}
+		@media only screen and (#{$type}-width: $width) {
+			@content;
+		}
+	}
+}
+
+@mixin mq_range($min, $max) {
+	@if (map_has_key($grid-breakpoints, $min) and map_has_key($grid-breakpoints, $max)) {
+
+		$width_max: map_get($grid-breakpoints, $max);
+		$width_min: map_get($grid-breakpoints, $min);
+		$width_max: $width_max - 1px;
+		@media only screen and (min-width: $width_min) and (max-width:$width_max) {
+			@content;
+		}
+	}
+}
+
+@mixin z-index($nome:'',$soma:0){
+	@if map_has_key($z-index, $nome) {
+		z-index: (map_get($z-index,$nome )+$soma) ;
+	}
+}
+
+@mixin scrollbar($width:8px,$bg-color:#eee, $trak-color:#aaa,$trak-color-hover:#999,$border-radius:0 ){
+	&::-webkit-scrollbar {
+		width: $width;
+	}
+
+	&::-webkit-scrollbar-track {
+		background-color: $bg-color;
+		border-radius: $border-radius;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background-color: $trak-color;
+		border-radius: $border-radius;
+		&:hover {
+			background: $trak-color-hover;
+		}
+	}
+}
+
+@function map-get-next($map, $key, $fallback: false, $return: value) {
+
+    // Check if map is valid
+    @if type-of($map) == map {
+
+        // Check if key exists in map
+        @if map-has-key($map, $key) {
+
+            // Init index counter variable
+            $i: 0;
+
+            // Init key index
+            $key-index: false;
+
+            // Traverse map for key
+            @each $map-key, $map-value in $map {
+                // Update index
+                $i: $i + 1;
+
+                // If map key found, set key index
+                @if $map-key == $key {
+                    $key-index: $i;
+                }
+
+                // If next index return next value or key based on $return
+                @if $i == $key-index + 1 {
+                    @if $return == key {
+                        @return $map-key;
+                    } @else {
+                        @return $map-value;
+                    }
+                }
+
+                // If last entry return false
+                @if $i == length($map) {
+                    @return $fallback;
+                }
+            }
+
+            @warn 'No next map item for key #{$key}';
+            @return $fallback;
+        }
+
+        @warn 'No valid key #{$key} in map';
+        @return $fallback;
+    }
+
+    @warn 'No valid map';
+    @return $fallback;
+}

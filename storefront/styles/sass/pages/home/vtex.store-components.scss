@@ -1,0 +1,73 @@
+.infoCardHeadline--m3-middle-card,
+.infoCardSubhead--m3-middle-card {
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #7d7d7d;
+}
+.infoCardHeadline--m3-middle-card {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #7d7d7d;
+}
+.infoCardSubhead--m3-middle-card {
+    font-family: "Roboto", sans-serif;
+    font-size: 13px;
+    line-height: 16px;
+    width: 218px;
+    margin: 9px 0 7px;
+}
+.infoCardCallActionContainer--m3-middle-card :global(.vtex-button) {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    padding: 8px 0;
+    line-height: 16px;
+    font-weight: 500;
+    font-size: 12px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #ffffff;
+    background: #292929;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    transition: ease-in 0.22s all;
+    width: 184px;
+}
+.infoCardCallActionContainer--m3-middle-card :global(.vtex-button):hover {
+    background: #303030;
+}
+.infoCardContainer--m3-middle-card {
+    height: auto;
+    background: #f0f0f0;
+    padding-bottom: 0;
+    margin: 102px 0 0px 0;
+}
+.infoCardTextContainer--m3-middle-card {
+    width: 29.45%;
+    max-width: 29.45%;
+}
+
+.infoCardImageContainer--m3-middle-card {
+    max-width: 70.55%;
+    width: 70.55%;
+    line-height: 0;
+}
+
+.infoCardImage--m3-middle-card {
+    max-width: 100%;
+    width: 100%;
+}
+
+@media only screen and (max-width: 700px) {
+    .infoCardImageContainer--m3-middle-card,
+    .infoCardTextContainer--m3-middle-card {
+        max-width: 100%;
+        width: 100%;
+    }
+}

@@ -1,0 +1,58 @@
+/* M3 PRODUCT DETAILS  */
+.flexRowContent--m3-product-details {
+    max-width: 1045px;
+    margin: 0 auto 20px auto;
+}
+
+.flexRowContent--m3-buy-btn {
+    margin-top: 0;
+}
+
+.flexRowContent--m3-buy-btn
+    :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+    height: 42px;
+}
+
+.flexRowContent--m3-buy-btn :global(.vtex-button) {
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background: #292929;
+    transition: all 0.4s;
+}
+.flexRowContent--m3-buy-btn :global(.vtex-button):hover {
+    background: #000000;
+}
+
+.flexRowContent--m3-buy-btn :global(.vtex-add-to-cart-button-0-x-buttonText) {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.flexRowContent--m3-buy-btn :global(.vtex-button):disabled {
+    background: rgba(229, 229, 229, 0.870786);
+    border-radius: 5px;
+    line-height: 42px;
+    margin-bottom: 32px;
+    letter-spacing: 0.05em;
+}
+
+.flexRowContent--m3-buy-btn
+    :global(.vtex-button):disabled
+    :global(.vtex-add-to-cart-button-0-x-buttonText) {
+    color: #c4c4c4;
+    letter-spacing: 0.05em;
+}
+
+.flexRow--m3-product-page-shelf {
+    max-width: 1088px;
+    margin: 0 auto;
+    margin-bottom: 104px;
+}

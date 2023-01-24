@@ -1,0 +1,48 @@
+{
+    "vtex.product-highlights@2.x:product-highlights": {
+        "props": {
+            "type": "collection",
+            "filter": {
+                "type": "hide",
+                "highlightNames": [""]
+            }
+        },
+        "children": ["product-highlight-wrapper"]
+    },
+    "product-highlight-wrapper": {
+        "props": {
+            "blockClass": "m3-collection-badge"
+        },
+        "children": ["product-highlight-text"]
+    },
+    "product-highlight-text": {
+        "props": {
+            "message": "{highlightName}",
+            "blockClass": "m3-collection-badge"
+        }
+    },
+    "product-price-savings#badge": {
+        "props": {
+            "blockClass": "saving-price-badge",
+            "markers": ["discount"],
+            "message": "<discount>{savingsPercentage}off</discount>"
+        }
+    },
+    "flex-layout.row#m3-shelf-badges": {
+        "props": {
+            "blockClass": "m3-shelf-badges",
+            "preserveLayoutOnMobile": true,
+            "preventHorizontalStretch": true
+        },
+        "children": ["flex-layout.col#m3-shelf-badges"]
+    },
+    "flex-layout.col#m3-shelf-badges": {
+        "props": {
+            "blockClass": "m3-shelf-badges"
+        },
+        "children": [
+            "vtex.product-highlights@2.x:product-highlights",
+            "product-price-savings#badge"
+        ]
+    }
+}

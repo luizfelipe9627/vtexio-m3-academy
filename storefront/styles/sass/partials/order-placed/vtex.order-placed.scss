@@ -1,0 +1,93 @@
+.noticesList {
+    background: white;
+}
+
+.noticeListItem {
+    padding: 20px;
+}
+.confirmationMessage {
+    padding: 0 20px;
+}
+.noticeListItem :global(.vtex-button) {
+    margin-top: 20px;
+}
+.noticeListItem :global(.vtex-button__label) {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: $color-white;
+}
+
+.orderOptionsWrapper :global(.vtex-button__label) {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.package {
+    flex-direction: column;
+}
+
+.bankInvoiceEmbed {
+    width: 100%;
+}
+.orderPaymentItem :global(.vtex-button__label) {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    background: #292929;
+}
+
+.orderSeller {
+    font-weight: 700;
+}
+
+.productList {
+    width: 100%;
+}
+
+.productName {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: #666666;
+}
+
+.productPrice {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    color: #104dcf;
+}
+
+.totalListItemValue,
+.totalListItemLabel {
+    color: #666666;
+}
+
+.productImageWrapper {
+    width: 70px;
+    height: auto;
+}
+.productListItem {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}

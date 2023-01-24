@@ -1,0 +1,233 @@
+{
+    "store.home": {
+        // Todos os blocos do site.
+        "blocks": [
+            "list-context.image-list#demo",
+            "flex-layout.row#deals",
+            "__fold__",
+            "flex-layout.row#faixa-de-imagens",
+            "menu-academy",
+            "countdown-academy",
+            "rich-text#m3-shelf-title",
+            "flex-layout.row#m3-shelf",
+            "info-card#m3-middle-card",
+            "flex-layout.row#m3-brands",
+            "newsletter#m3-newsletter",
+            "link#whatsapp"
+        ]
+    },
+
+    "countdown-academy": {
+        "props": {
+            // Configurado a props que vai receber a data final.
+            "endDate": "25/01/2023/00:00"
+        }
+    },
+
+    // Bloco criando um flex-layout de linha.
+    "flex-layout.row#faixa-de-imagens": {
+        "props": {
+            // Defini a classe do bloco.
+            "blockClass": "faixa-de-imagens"
+            // Deixa o tamanho dos elementos automáticos.
+            //"colSizing": "auto"
+        },
+        // Dentro do filho coloca todos os blocos que vai ficar por dentro do bloco pai.
+        "children": [
+            "image#imagem-1",
+            "flex-layout.col#imagem-meio",
+            "image#imagem-3"
+        ]
+    },
+
+    // Bloco criando um flex-layout de coluna.
+    "flex-layout.col#imagem-meio": {
+        "props": {
+            // Defini a classe do bloco.
+            "blockClass": "faixa-de-imagens"
+        },
+        // Dentro do filho coloca todos os blocos que vai ficar por dentro do bloco pai.
+        "children": ["image#imagem-2", "flex-layout.col#conteudo-meio"]
+    },
+
+    // Bloco criando um flex-layout de coluna usado para posicionar o bloco de texto.
+    "flex-layout.col#conteudo-meio": {
+        "props": {
+            // Defini a classe do bloco.
+            "blockClass": "conteudo-meio",
+            "preventVerticalStretch": "auto"
+        },
+        "children": ["rich-text#texto-meio", "link#link-meio"]
+    },
+
+    // Bloco criando um texto.
+    "rich-text#texto-meio": {
+        "props": {
+            // Usamos o "\n" para fazer quebra de linha e as "#" servem para alterar o tamanho do texto.
+            "text": "### Qual produto\n ## ideal para você?\n Lorem ipsum dolor sit amet, consectetur",
+            "blockClass": "texto-meio"
+        }
+    },
+
+    // Bloco criando um link.
+    "link#link-meio": {
+        "props": {
+            // Link.
+            "href": "/",
+            // Botão que ativa o link.
+            "label": "RESPONDA NOSSO QUIZ E DESCUBRA",
+            "blockClass": "link-texto"
+        }
+    },
+
+    // Primeira imagem.
+    "image#imagem-1": {
+        "props": {
+            // Caminho da imagem a partir da pasta pai.
+            "src": "assets/imgs/2.webp"
+        }
+    },
+
+    // Segunda  imagem.
+    "image#imagem-2": {
+        "props": {
+            // Caminho da imagem a partir da pasta pai.
+            "src": "assets/imgs/1.webp"
+        }
+    },
+
+    // Terceira imagem.
+    "image#imagem-3": {
+        "props": {
+            // Caminho da imagem a partir da pasta pai.
+            "src": "assets/imgs/3.webp"
+        }
+    },
+
+    "challenge.trade-policy-condition": {
+        "props": {
+            "redirectPath": "/registration",
+            "defaultContentVisibility": "hidden"
+        }
+    },
+    "list-context.image-list#demo": {
+        "children": ["slider-layout#demo-images"],
+        "props": {
+            "height": 720,
+            "images": [
+                {
+                    "image": "https://agenciamagma.ecommercetools.com.br/arquivos/vtexio-template-b2c/banner-desktop.png",
+                    "mobileImage": "https://agenciamagma.ecommercetools.com.br/arquivos/vtexio-template-b2c/banner-mobile.png"
+                },
+                {
+                    "image": "https://agenciamagma.ecommercetools.com.br/arquivos/vtexio-template-b2c/banner-desktop.png",
+                    "mobileImage": "https://agenciamagma.ecommercetools.com.br/arquivos/vtexio-template-b2c/banner-mobile.png"
+                }
+            ]
+        }
+    },
+    "slider-layout#demo-images": {
+        "props": {
+            "itemsPerPage": {
+                "desktop": 1,
+                "tablet": 1,
+                "phone": 1
+            },
+            "blockClass": "m3-main-slider",
+            "infinite": true,
+            "showNavigationArrows": "desktopOnly"
+        }
+    },
+    // M3 MIDDLE CARD
+    "info-card#m3-middle-card": {
+        "props": {
+            "blockClass": "m3-middle-card",
+            "id": "m3-middle-card",
+            "isFullModeStyle": false,
+            "textPosition": "left",
+            "imageUrl": "assets/imgs/mosaic01.png",
+            "headline": "LOREM IPSUM",
+            "subhead": "",
+            "callToActionText": "VER MAIS",
+            "callToActionLinkTarget": "_blank",
+            "callToActionUrl": "/",
+            "textAlignment": "center"
+        }
+    },
+    // M3 BRANDS SLIDE
+    "flex-layout.row#m3-brands": {
+        "props": {
+            "blockClass": "m3-brands",
+            "colSizing": "auto",
+            "horizontalAlign": "center",
+            "colGap": "2",
+            "fullWidth": true
+        },
+        "children": [
+            "rich-text#m3-brands-heading",
+            "list-context.image-list#m3-brands-list"
+        ]
+    },
+    "rich-text#m3-brands-heading": {
+        "props": {
+            "text": "## marcas em destaque",
+            "blockClass": "m3-brands-heading",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "font": "t-heading-4"
+        }
+    },
+    "list-context.image-list#m3-brands-list": {
+        "children": ["slider-layout#m3-brands-slide"],
+        "props": {
+            "images": [
+                {
+                    "image": "assets/imgs/brand-makup.png",
+                    "description": "something something"
+                },
+                {
+                    "image": "assets/imgs/brand-makup.png",
+                    "description": "something something"
+                },
+                {
+                    "image": "assets/imgs/brand-makup.png",
+                    "description": "something something"
+                },
+                {
+                    "image": "assets/imgs/brand-makup.png",
+                    "description": "something something"
+                },
+                {
+                    "image": "assets/imgs/brand-makup.png",
+                    "description": "something something"
+                },
+                {
+                    "image": "assets/imgs/brand-makup.png",
+                    "description": "something something"
+                }
+            ]
+        }
+    },
+    "slider-layout#m3-brands-slide": {
+        "props": {
+            "blockClass": "m3-brands-slide",
+            "itemsPerPage": {
+                "desktop": 5,
+                "tablet": 3,
+                "phone": 3
+            },
+            "fullWidth": false,
+            "showPaginationDots": "never",
+            "showNavigationArrows": "desktopOnly",
+            "centerMod": {
+                "mobile": true
+            }
+        }
+    },
+    "link#whatsapp": {
+        "props": {
+            "href": "https://wa.me/5516997321176",
+            "blockClass": "whatsapp-link"
+        }
+    }
+}

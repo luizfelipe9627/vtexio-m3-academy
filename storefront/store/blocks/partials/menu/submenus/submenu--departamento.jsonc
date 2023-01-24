@@ -1,0 +1,196 @@
+{
+    "vtex.menu@2.x:submenu#departamento": {
+        "children": [
+            "vtex.menu@2.x:menu#submenu-departamento",
+            "image#sub-menu-banner--departamento"
+        ],
+        "props": {
+            "blockClass": "custom-dropwdown"
+        }
+    },
+    "image#sub-menu-banner--departamento": {
+        "props": {
+            "blockClass": "menu-banner",
+            "src": "assets/imgs/menu-banner.png",
+            "maxWidth": 307,
+            "link": true
+        }
+    },
+    "vtex.menu@2.x:menu#submenu-departamento": {
+        "props": {
+            "blockClass": "custom-dropdown-submenu",
+            "items": [
+                {
+                    "id": "menu-item-link-01",
+                    "type": "custom",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "#",
+                        "noFollow": false,
+                        "tagTitle": "Categoria 01",
+                        "text": "Categoria 01"
+                    }
+                },
+                {
+                    "id": "menu-item-link-02",
+                    "type": "custom",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "/Categoria 02",
+                        "noFollow": false,
+                        "tagTitle": "Categoria 02",
+                        "text": "Categoria 02"
+                    }
+                },
+                {
+                    "id": "menu-item-ver-todos",
+                    "type": "custom",
+                    "iconId": null,
+                    "highlight": true,
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "/VER TODOS",
+                        "noFollow": false,
+                        "tagTitle": "VER TODOS",
+                        "text": "VER TODOS"
+                    }
+                }
+            ]
+        }
+    },
+    "menu-item#submenu-departamento-heading-link": {
+        "props": {
+            "blockClass": "custom-dropdown-submenu-links-heading",
+            "id": "menu-item-submenu-departamento-heading-link",
+            "type": "category",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "categoryId": 1,
+                "text": "Departamento"
+            }
+        }
+    },
+    "menu-item#cuida-bem": {
+        "props": {
+            "blockClass": "custom-dropdown-submenu-links-item",
+            "id": "menu-item-amendoim",
+            "type": "category",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "categoryId": 1,
+                "text": "Cuida Bem"
+            }
+        }
+    },
+    "menu-item#paçoquita": {
+        "props": {
+            "blockClass": "custom-dropdown-submenu-links-item",
+            "id": "menu-item-amendoim",
+            "type": "category",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "categoryId": 1,
+                "text": "Paçoquita"
+            }
+        }
+    },
+    "menu-item#agencia-m3": {
+        "props": {
+            "blockClass": "custom-dropdown-submenu-links-item",
+            "id": "menu-item-amendoim",
+            "type": "category",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "categoryId": 1,
+                "text": "Agencia M3"
+            }
+        }
+    },
+    "menu-item#departamento-see-all": {
+        "props": {
+            "blockClass": "custom-dropdown-submenu-links-all",
+            "id": "menu-item-release-see-all",
+            "type": "category",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "categoryId": 1,
+                "text": "VER TODOS"
+            }
+        }
+    },
+    "vtex.menu@2.x:submenu.accordion#departamento-mobile": {
+        "props": {
+            "blockClass": "header"
+        },
+        "children": ["vtex.menu@2.x:menu#departamento-mobile-accordion"]
+    },
+    "vtex.menu@2.x:menu#departamento-mobile-accordion": {
+        "props": {
+            "orientation": "vertical",
+            "items": [
+                {
+                    "id": "menu-item-link-01",
+                    "type": "custom",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "#",
+                        "noFollow": false,
+                        "tagTitle": "Categoria 01",
+                        "text": "Categoria 01"
+                    }
+                },
+                {
+                    "id": "menu-item-link-02",
+                    "type": "custom",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "/about-us",
+                        "noFollow": false,
+                        "tagTitle": "Categoria 02",
+                        "text": "Categoria 02"
+                    }
+                },
+                {
+                    "id": "menu-item-ver-todos",
+                    "type": "custom",
+                    "iconId": null,
+                    "highlight": true,
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "/VER TODOS",
+                        "noFollow": false,
+                        "tagTitle": "VER TODOS",
+                        "text": "VER TODOS"
+                    }
+                }
+            ]
+        }
+    },
+    "menu-item#category-departamento--mobile": {
+        "props": {
+            "blockClass": "header-menu-accordion-title",
+            "id": "menu-item-category-departamento",
+            "type": "category",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "categoryId": 1,
+                "text": "Departamento"
+            }
+        },
+        "blocks": ["vtex.menu@2.x:submenu.accordion#departamento-mobile"]
+    }
+}

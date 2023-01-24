@@ -1,0 +1,47 @@
+.paragraph--deals {
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  color: $color-white;
+  margin: 0;
+}
+
+
+/* M3 BRANDS HEADING   */
+/* ------------------------------------------------------------------------------------ */
+
+.heading--m3-brands-heading {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.1em;
+  color: #7D7D7D;
+  text-transform: uppercase;
+}
+
+.paragraph--m3-brands-heading {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  text-transform: lowercase;
+  color: $color-gray4;
+}
+
+
+
+/*** Minha conta */
+.paragraph--account-title-text{
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.1em;
+  color: #292929;
+  text-transform: uppercase;
+}

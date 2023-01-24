@@ -1,0 +1,37 @@
+{
+    "store.custom#perguntas": {
+        "blocks": [
+            "flex-layout.row#institucional-breadcrumb",
+            "flex-layout.row#institucional-title",
+            "flex-layout.row#wrapper-perguntas"
+        ]
+    },
+    "flex-layout.row#wrapper-perguntas": {
+        "children": [
+            "flex-layout.col#inst-nav",
+            "flex-layout.col#institucional-perguntas"
+        ],
+        "props": {
+            "blockClass": "institucional-wrapper"
+        }
+    },
+    "flex-layout.col#institucional-perguntas": {
+        "props": {
+            "blockClass": "institucional-main-row"
+        },
+        "children": ["flex-layout.row#institucional-perguntas"]
+    },
+    "flex-layout.row#institucional-perguntas": {
+        "children": ["rich-text#institucional-perguntas"]
+    },
+    "rich-text#institucional-perguntas": {
+        "props": {
+            "textAlignment": "LEFT",
+            "textPosition": "LEFT",
+            "text": "## Perguntas \n Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est",
+            "textColor": "",
+            "font": "t-heading-5",
+            "blockClass": "institucional"
+        }
+    }
+}

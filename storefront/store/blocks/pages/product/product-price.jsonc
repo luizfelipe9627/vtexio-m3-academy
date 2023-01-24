@@ -1,0 +1,81 @@
+{
+    "product-list-price#summary": {
+        "props": {
+            "blockClass": "summary"
+        }
+    },
+    "product-installments#summary": {
+        "props": {
+            "blockClass": "summary"
+        }
+    },
+    "product-selling-price#summary": {
+        "props": {
+            "blockClass": "summary"
+        }
+    },
+    "product-price-savings#summary": {
+        "props": {
+            "markers": ["discount"],
+            "blockClass": "summary"
+        }
+    },
+    "flex-layout.row#selling-price": {
+        "props": {
+            "colGap": 2,
+            "preserveLayoutOnMobile": true,
+            "preventHorizontalStretch": true,
+            "marginBottom": 4
+        },
+        "children": ["challenge-permission#selling-price"]
+    },
+    "flex-layout.row#selling-price-savings": {
+        "props": {
+            "colGap": 2,
+            "preserveLayoutOnMobile": true,
+            "preventHorizontalStretch": true,
+            "marginBottom": 4
+        },
+        "children": [
+            "product-selling-price",
+            "product-price-savings"
+            // "challenge-permission#general2-price"
+        ]
+    },
+    "flex-layout.row#list-price-savings": {
+        "props": {
+            "colGap": 2,
+            "preserveLayoutOnMobile": true,
+            "preventHorizontalStretch": true,
+            "marginBottom": 2,
+            "marginTop": 0
+        },
+        "children": ["challenge-permission#general3-price"]
+    },
+    "challenge-permission#selling-price": {
+        "blocks": ["allowed-content#selling-price", "disallowed-content#price"]
+    },
+
+    "allowed-content#selling-price": {
+        "children": ["product-selling-price"]
+    },
+    "challenge-permission#general2-price": {
+        "blocks": ["allowed-content#general2-price", "disallowed-content#price"]
+    },
+    "allowed-content#general2-price": {
+        "children": [
+            "product-selling-price#summary",
+            "product-price-savings#summary"
+        ]
+    },
+    "challenge-permission#general3-price": {
+        "blocks": ["allowed-content#general3-price", "disallowed-content#price"]
+    },
+    "allowed-content#general3-price": {
+        "children": ["product-list-price", "product-price-savings"]
+    },
+
+    "disallowed-content#price": {
+        "children": []
+    }
+}

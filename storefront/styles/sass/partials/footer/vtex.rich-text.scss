@@ -1,0 +1,91 @@
+/* FOOTER  */
+
+.paragraph--footer-funcionamento-heading {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: capitalize;
+  color: #7D7D7D;
+  margin: 0 0 12px 0;
+}
+.paragraph--footer-funcionamento-sub-heading {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: capitalize;
+  color: #7D7D7D;
+  margin: 0;
+}
+
+.paragraph--footer-site-url-text .link--footer-site-url-text {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: $color-white;
+  text-decoration: none;
+}
+
+.paragraph--footer-bottom-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 12px;
+  text-transform: capitalize;
+  color: #7d7d7d;
+}
+
+.wrapper--footer-bottom-store-info {
+  width: 277px !important;
+}
+
+.paragraph--not-found-heading {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: bold !important;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: capitalize;
+  color: #666666;
+}
+
+.container--not-found-sub-heading {
+  padding: 0;
+  margin: 0;
+}
+.strong--not-found-sub-heading {
+  font-weight: 500 !important;
+}
+.paragraph--not-found-sub-heading {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500 !important;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: capitalize;
+  color: #6c6c6c;
+}
+
+@media only screen and (max-width: 1025px) {
+  .heading--m3-brands-heading {
+    text-align: center;
+  }
+  .wrapper--m3-brands-heading {
+    margin-bottom: 37px;
+  }
+
+  .container--footer-bottom-store-info {
+    background: $color-white;
+  }
+
+  .wrapper--footer-bottom-store-info {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .paragraph--footer-site-url-text {
+    margin: 0;
+  }
+}

@@ -1,0 +1,147 @@
+{
+    "store.custom#fale-conosco": {
+        "blocks": [
+            "flex-layout.row#institucional-breadcrumb",
+            "flex-layout.row#institucional-title",
+            "flex-layout.row#wrapper-fale-conosco"
+        ]
+    },
+    "flex-layout.row#wrapper-fale-conosco": {
+        "children": [
+            "flex-layout.col#inst-nav",
+            "flex-layout.col#form-fale-conosco"
+        ],
+        "props": {
+            "blockClass": "institucional-wrapper"
+        }
+    },
+    "flex-layout.col#form-fale-conosco": {
+        "props": {
+            "blockClass": "fc-form"
+        },
+        "children": ["flex-layout.row#form-fale-conosco"]
+    },
+    "flex-layout.row#form-fale-conosco": {
+        "children": ["form#fale-conosco"]
+    },
+    "form#fale-conosco": {
+        "props": {
+            "entity": "faleconosco",
+            "schema": "v2",
+            "preventVerticalStretch": false
+        },
+        "children": [
+            "rich-text#fale-conosco-title",
+            "flex-layout.row#form-fale-conosco-content"
+        ],
+        "blocks": ["form-success"]
+    },
+    "flex-layout.row#form-fale-conosco-content": {
+        "children": ["flex-layout.col#form-fale-conosco-items"]
+    },
+    "flex-layout.col#form-fale-conosco-items": {
+        "props": {
+            "blockClass": "fc-form-items"
+        },
+        "children": [
+            "form-input.text#fc-name",
+            "form-input.text#fc-email",
+            "flex-layout.row#form-fale-conosco-3-items",
+            "flex-layout.row#form-fale-conosco-2-items",
+            "form-input.text#fc-mensagem",
+            "form-submit"
+        ]
+    },
+    "rich-text#fale-conosco-title": {
+        "props": {
+            "textAlignment": "LEFT",
+            "textPosition": "LEFT",
+            "text": "Contato",
+            "textColor": "",
+            "font": "t-heading-5",
+            "blockClass": "fc-form-title"
+        }
+    },
+    "form-input.text#fc-name": {
+        "props": {
+            "pointer": "#/properties/name",
+            "label": "Nome"
+        }
+    },
+    "form-input.text#fc-email": {
+        "props": {
+            "pointer": "#/properties/email",
+            "label": "E-mail"
+        }
+    },
+    "flex-layout.row#form-fale-conosco-3-items": {
+        "props": {
+            "colGap": "4"
+        },
+        "children": [
+            "form-input.text#fc-telefone",
+            "form-input.dropdown#fc-estado",
+            "form-input.text#fc-city"
+        ]
+    },
+    "form-input.text#fc-telefone": {
+        "props": {
+            "pointer": "#/properties/phone",
+            "label": "Telefone"
+        }
+    },
+    "form-input.dropdown#fc-estado": {
+        "props": {
+            "pointer": "#/properties/state",
+            "label": "Estado"
+        }
+    },
+    "form-input.text#fc-city": {
+        "props": {
+            "pointer": "#/properties/city",
+            "label": "Cidade"
+        }
+    },
+    "flex-layout.row#form-fale-conosco-2-items": {
+        "props": {
+            "colGap": "4"
+        },
+        "children": [
+            "form-input.text#fc-descricao",
+            "form-input.text#fc-assunto"
+        ]
+    },
+    "form-input.text#fc-descricao": {
+        "props": {
+            "pointer": "#/properties/description",
+            "label": "Descrição"
+        }
+    },
+    "form-input.text#fc-assunto": {
+        "props": {
+            "pointer": "#/properties/subject",
+            "label": "Assunto"
+        }
+    },
+    "form-input.text#fc-mensagem": {
+        "props": {
+            "pointer": "#/properties/message",
+            "label": "Mensagem"
+        }
+    },
+    "form-submit": {
+        "props": {
+            "label": "Enviar"
+        }
+    },
+    "form-success": {
+        "children": ["rich-text#successSubmit"]
+    },
+    "rich-text#successSubmit": {
+        "props": {
+            "text": "Enviado com sucesso, entraremos em contato em breve!",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER"
+        }
+    }
+}

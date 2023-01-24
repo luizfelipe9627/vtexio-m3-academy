@@ -1,0 +1,289 @@
+.checkout-container {
+	.client-pre-email {
+		border-color: $color-gray4;
+		font-family: $font-family;
+		padding-top: 8px;
+
+		.link-cart {
+			a {
+				color: $color-black;
+				font-size: 14px;
+
+				&:hover {
+					color: lighen($color-black, 10);
+				}
+			}
+		}
+
+		.pre-email {
+			flex-direction: column;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			h3 {
+				margin-bottom: 16px;
+
+				span {
+					color: #303030;
+					font-size: 24px;
+				}
+
+				small {
+					color: $color-gray4;
+				}
+			}
+		}
+
+		.client-email {
+			margin: 0 0 16px;
+
+			input {
+				box-shadow: none;
+				color: $color-black;
+				font-family: $font-family;
+				padding: 0 16px;
+				border: 2px solid $color-gray3;
+				box-sizing: border-box;
+				border-radius: 5px;
+
+				@media (max-width: 490px) {
+					width: auto;
+				}
+			}
+
+			button {
+				background-color: $color-black;
+				border-radius: 5px;
+				border: none;
+				font-family: $font-family;
+				height: 54px;
+				right: 0;
+				top: 0;
+
+				@media (max-width: 490px) {
+					height: 48px;
+					margin: 0;
+					position: absolute;
+				}
+			}
+
+			span.help.error {
+				color: red;
+			}
+		}
+
+		.emailInfo {
+			padding: 16px;
+			background-color: $color-white;
+			border: 1px solid $color-gray4;
+			border-radius: 0;
+
+			h3 {
+				color: #303030;
+				margin: 0 0 8px 0;
+			}
+
+			ul {
+				margin: 0;
+
+				li {
+					span {
+						color: $color-black;
+					}
+
+					i::before {
+						color: $color-black;
+						font-size: 1rem;
+						opacity: 1;
+					}
+				}
+			}
+
+			i::before {
+				color: $color-black;
+				font-size: 6rem;
+				opacity: 0.5;
+			}
+		}
+	}
+
+	.shipping-data,
+	.payment-data,
+	.client-profile-data {
+		.accordion-group {
+			border-radius: 0;
+			border: 1px solid $color-gray4;
+			font-family: $font-family;
+			padding: 16px;
+
+			.accordion-heading {
+				span {
+					color: #303030;
+					margin-bottom: 8px;
+					padding: 0;
+
+					i::before {
+						fill: #303030;
+					}
+				}
+
+				a {
+					align-items: center;
+					background-color: #303030;
+					border-radius: 8px;
+					border: none;
+					color: $color-white;
+					display: flex;
+					justify-content: center;
+					padding: 6px 5px 6px 8px;
+				}
+			}
+
+			.accordion-inner {
+				padding: 0;
+
+				/* General configurations */
+
+				.client-notice {
+					color: $color-black;
+				}
+
+				p {
+					label {
+						color: $color-black;
+						font-weight: 500;
+					}
+
+					select,
+					input {
+						border-radius: 0;
+						border: 1px solid $color-gray4;
+						box-shadow: none;
+					}
+
+					.help.error {
+						color: red;
+					}
+				}
+
+				.box-client-info-pj {
+					.link a#is-corporate-client,
+					.link a#not-corporate-client {
+						color: $color-black;
+						font-weight: 500;
+						text-decoration: underline;
+					}
+				}
+
+				.state-inscription-box span {
+					font-weight: 500;
+				}
+
+				button.submit {
+					border: none;
+					border-radius: 5px;
+					background: $color-black;
+					margin-top: 8px;
+					outline: none;
+					transition: all 0.2s linear;
+
+					&:hover {
+						background: lighten($color-black, 5);
+					}
+
+					&:active {
+						background: darken($color-black, 5);
+					}
+				}
+
+				/* Shipping configurations */
+
+				.ship-postalCode small a {
+					color: #303030;
+					font-weight: 500;
+					text-decoration: underline;
+				}
+
+				.vtex-omnishipping-1-x-deliveryGroup {
+					p {
+						color: #303030;
+						font-size: 14px;
+						font-weight: 500;
+					}
+
+					.shp-lean {
+						border: 1px solid $color-gray4;
+						border-radius: 0;
+
+						label {
+							background-color: $color-white;
+							box-shadow: none;
+							color: #303030;
+							padding: 8px 12px;
+
+							svg path {
+								fill: #d8c8ac;
+							}
+						}
+					}
+				}
+
+				.delivery-address-title {
+					color: #303030;
+					font-size: 14px;
+					font-weight: 500;
+				}
+
+				.shp-summary-group-info {
+					border-color: $color-gray4;
+				}
+
+				.address-summary {
+					background: none;
+					border-color: $color-gray4;
+					border-radius: 0;
+					color: #303030;
+					padding: 12px;
+
+					@include mq(md, max) {
+						background-position: 8px 9px;
+					}
+
+					a {
+						color: #303030;
+						font-weight: 500;
+						text-decoration: underline;
+					}
+				}
+
+				.shp-summary-group-price,
+				.shp-summary-package {
+					color: $color-gray4;
+				}
+
+				.shp-summary-group-price {
+					padding-right: 16px;
+				}
+
+				.shp-summary-package {
+					padding-left: 16px;
+				}
+
+				.vtex-omnishipping-1-x-summaryChange {
+					border-color: #303030;
+					color: #303030;
+				}
+
+				.vtex-omnishipping-1-x-deliveryChannelsToggle {
+					background-color: #d8c8ac;
+					border: 1px solid #d8c8ac;
+				}
+
+				.vtex-omnishipping-1-x-deliveryOptionActive {
+					text-shadow: 1.3px 1px lighten($color-black, 50);
+				}
+			}
+		}
+	}
+}

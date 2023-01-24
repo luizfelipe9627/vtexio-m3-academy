@@ -1,0 +1,22 @@
+.flexRow--faixa-de-imagens {
+    margin-top: 5rem;;
+    // Irá aplicar esse estilos a todas classes contendo o nome definido dentro do global.
+    :global(.vtex-store-components-3-x-imageElement) {
+        height: 100%;
+        width: 100%;
+    }
+
+    .stretchChildrenWidth {
+        margin: 0 8px;
+    }
+}
+
+.flexCol--faixa-de-imagens {
+    position: relative;
+}
+
+.flexCol--conteudo-meio {
+    position: absolute;
+    inset: 0;
+    justify-content: center;
+}

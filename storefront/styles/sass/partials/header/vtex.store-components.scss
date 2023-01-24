@@ -1,0 +1,43 @@
+.searchBarInnerContainer {
+    border: 2px solid #f0f0f0;
+    border-radius: 5px;
+}
+.searchBarInnerContainer :global(.vtex-store-components-3-x-portalContainer) {
+    position: absolute !important;
+    top: 0px;
+    left: -50% !important;
+    transform: translatex(50%);
+}
+
+.searchBarContainer :global(.vtex-input-prefix__group) {
+    border: none;
+    height: 32px;
+}
+
+.autoCompleteOuterContainer :global(.vtex-input__suffix) {
+    padding: 0;
+}
+
+.searchBarIcon--mobile {
+    padding-right: 10px;
+}
+
+.headerRowContainer {
+    background: rgba(0, 0, 0, 0.2);
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.imageElementLink--menu-banner {
+    display: block;
+    line-height: 0;
+    width: 383px;
+    height: 229px;
+    overflow: hidden;
+}
+.imageElement--menu-banner {
+    transition: transform 0.2s ease;
+}
+.imageElement--menu-banner:hover {
+    transform: scale(1.1);
+}

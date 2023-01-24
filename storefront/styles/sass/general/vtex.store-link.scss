@@ -1,0 +1,102 @@
+.link--buy-with-cnpj {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: $color-white;
+  line-height: 37px;
+  padding: 0 16px;
+  position: relative;
+}
+
+.link--buy-with-cnpj::after {
+  content: '';
+  display: block;
+  height: 23px;
+  width: 1px;
+  background: $color-white;
+  position: absolute;
+  top: 9px;
+  right: 0;
+}
+
+.link--not-found-btn {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  display: block;
+  line-height: 42px;
+  max-width: 330px;
+  text-align: center;
+  background: #292929;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  color: $color-white;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 32px auto 0 auto;
+}
+
+.link--whatsapp-link {
+  display: block;
+  height: 35px;
+  width: 35px;
+  background: url(assets/svgs/whatsapp.svg) no-repeat center center !important;
+  background-size: contain;
+  position: fixed;
+  bottom: 80px;
+  right: 14px;
+}
+
+.buttonLink--inst-nav {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  font-variant: small-caps;
+  color: #7d7d7d;
+  box-sizing: border-box;
+  background: none;
+  border-radius: unset;
+  border: none;
+  transition: ease-in .22s all;
+}
+
+.buttonLink--inst-nav:active,
+.buttonLink--inst-nav:hover {
+  background: #292929;
+  color: $color-white;
+}
+
+.link--pedidos-antigos {
+  font-family: 'Roboto', sans-serif;
+  position: absolute;
+  top: 31px;
+  right: 33px;
+  color: $color-white;
+  background: #292929;
+  border-radius: 5px;
+  display: inline-block;
+  text-decoration: none;
+  padding: 12px 10px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-top: 30px;
+}
+.label--inst-nav{
+  text-align: left;
+}
+@media only screen and (max-width: 1026px) {
+  .link--pedidos-antigos {
+     position: static;
+     float: right;
+  }
+}

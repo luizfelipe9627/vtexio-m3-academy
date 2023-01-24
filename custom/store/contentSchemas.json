@@ -1,0 +1,136 @@
+{
+    "definitions": {
+        "Header": {
+            "type": "object",
+            "properties": {
+                "title": {
+                    "title": "Titulo do link",
+                    "type": "string",
+                    "default": null
+                },
+
+                "menu": {
+                    "title": "Header menu",
+                    "$ref": "app:agenciamagma.m3-custom#/definitions/DynamicMenu"
+                }
+            }
+        },
+        "DynamicMenu": {
+            "type": "object",
+            "properties": {
+                "items": {
+                    "minItems": 0,
+                    "type": "array",
+                    "title": "Menu Items",
+                    "description": "Pode subir a imagem do icone do menu aqui",
+                    "items": {
+                        "$ref": "app:agenciamagma.m3-custom#/definitions/MenuItem"
+                    }
+                }
+            }
+        },
+        "MenuItem": {
+            "properties": {
+                "MenuItemProps": {
+                    "type": "object",
+                    "properties": {
+                        "iconSrc": {
+                            "title": "Upload Icon Image",
+                            "description": "Pode subir a imagem do icone do menu aqui",
+                            "$ref": "app:vtex.native-types#/definitions/url",
+                            "default": "",
+                            "widget": {
+                                "ui:widget": "image-uploader"
+                            }
+                        },
+                        "title": {
+                            "title": "Titulo do link",
+                            "type": "string",
+                            "default": null
+                        },
+                        "href": {
+                            "title": "Caminho do link",
+                            "type": "string",
+                            "default": null
+                        },
+                        "internal": {
+                            "title": "Link interno",
+                            "type": "boolean",
+                            "default": true
+                        },
+                        "content": {
+                            "title": "Conteudo do link",
+                            "type": "string",
+                            "default": null
+                        },
+                        "banner": {
+                            "title": "Upload Banner para o submenu",
+                            "description": "Pode subir um banner para o submenu aqui",
+                            "$ref": "app:vtex.native-types#/definitions/url",
+                            "default": "",
+                            "widget": {
+                                "ui:widget": "image-uploader"
+                            }
+                        },
+                        "bannerUrl": {
+                            "title": "Upload Banner para o submenu",
+                            "description": "Pode subir um banner para o submenu aqui",
+                            "$ref": "app:vtex.native-types#/definitions/url"
+                        },
+                        "items": {
+                            "minItems": 0,
+                            "type": "array",
+                            "title": "SubMenu Items",
+                            "items": {
+                                "$ref": "app:agenciamagma.m3-custom#/definitions/SubMenuItem"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "SubMenuItem": {
+            "properties": {
+                "SubMenuItemProps": {
+                    "type": "object",
+                    "properties": {
+                        "iconSrc": {
+                            "title": "Upload Icon Image",
+                            "description": "Pode subir a imagem do icone do menu aqui",
+                            "$ref": "app:vtex.native-types#/definitions/url",
+                            "default": "",
+                            "widget": {
+                                "ui:widget": "image-uploader"
+                            }
+                        },
+                        "highlight": {
+                            "title": "Destaque",
+                            "type": "boolean",
+                            "default": false
+                        },
+                        "title": {
+                            "title": "Titulo do link",
+                            "type": "string",
+                            "default": null
+                        },
+                        "href": {
+                            "title": "Caminho do link",
+                            "type": "string",
+                            "default": null
+                        },
+                        "internal": {
+                            "title": "Link interno",
+                            "type": "boolean",
+                            "default": true
+                        },
+                        "content": {
+                            "title": "Conteudo do link",
+                            "type": "string",
+                            "default": null
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

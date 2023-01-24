@@ -1,0 +1,50 @@
+.menuLinks :global(.b--action-primary) {
+  border-color: #292929;
+  color: #292929;
+}
+.userGreeting {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 124.68%;
+  text-align: center;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+
+  color: #303030;
+}
+.boxContainer{
+  border: 1px solid $color-gray4;
+}
+.boxContainerFooter{
+  background-color: #292929;
+  max-height: 36px;
+}
+.boxContainerFooter :global(.vtex-button){
+  color: $color-white;
+  margin-top: 2px;
+  transition: ease-in .22s all;
+}
+.boxContainerFooter :global(.vtex-button):hover{
+  background-color: #303030;
+}
+:global(.vtex-pageHeader__container){
+  padding-top: 1.3rem;
+  padding-bottom: 0;
+  padding-left: 1rem;
+}
+:global(.vtex-pageHeader__title){
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 10px;
+  line-height: 12px;
+  text-align: left;
+  text-transform: uppercase;
+  color: #292929;
+
+}
+:global(.vtex-pageHeader-link__container){
+  padding-bottom: 2rem;
+}

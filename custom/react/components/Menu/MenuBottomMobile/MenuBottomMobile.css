@@ -1,0 +1,36 @@
+.MenuBottomMobile{
+    background: #292929;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.MenuBottomMobileUserIcon{
+    margin-right: 13px;
+}
+
+.MenuBottomMobileLink{
+    font-family: "Lato",sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.MenuBottomMobileContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.MenuBottomMobileSeparator{
+    display: block;
+    height: 18px;
+    width: 2px;
+    background: #ffffff;
+    margin: 0 6px;
+}

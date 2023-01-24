@@ -1,0 +1,27 @@
+{
+    "name": "custom",
+    "license": "UNLICENSED",
+    "version": "1.0.0",
+    "scripts": {
+        "lint": "eslint --ext js,jsx,ts,tsx . --fix",
+        "format": "prettier --write \"**/*.{ts,js,json}\"",
+        "install:all": "concurrently \"cd react && yarn install\""
+    },
+    "devDependencies": {
+        "@typescript-eslint/eslint-plugin": "^4.18.0",
+        "@typescript-eslint/parser": "^4.18.0",
+        "@vtex/prettier-config": "0.1.4",
+        "eslint": "7.12.1",
+        "eslint-config-vtex": "12.3.2",
+        "eslint-config-vtex-react": "^6.2.1",
+        "eslint-plugin-react": "^7.23.1",
+        "husky": "^5.2.0",
+        "lint-staged": "10.1.1",
+        "prettier": "2.0.2",
+        "typescript": "3.8.3"
+    },
+    "dependencies": {
+        "husky": "^5.2.0",
+        "react": "^17.0.2"
+    }
+}

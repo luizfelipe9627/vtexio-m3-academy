@@ -1,0 +1,107 @@
+.sellingPrice--m3-custom-selling-price {
+    display: block;
+    margin-bottom: 4px;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+    color: #7d7d7d;
+    text-transform: uppercase;
+}
+
+.sellingPrice--m3-custom-selling-price
+    .currencyContainer--m3-custom-selling-price {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    color: #292929;
+    margin-left: 3px;
+}
+
+.installments--m3-custom-installments {
+    font-size: 12px;
+    line-height: 14px;
+    color: #7d7d7d;
+}
+
+.installmentValue--m3-custom-installments {
+    font-weight: 700;
+}
+.savings--m3-custom-price-savings {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    text-transform: lowercase;
+    color: #a70505;
+}
+
+.currencyContainer--m3-shelf {
+    font-weight: 700 !important;
+}
+
+.listPrice .currencyContainer--m3-shelf {
+    font-weight: 400 !important;
+}
+
+.savings--m3-shelf {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    text-align: center;
+    text-transform: lowercase;
+    color: #a70505;
+}
+.savings--m3-shelf::before {
+    content: "/";
+}
+.currencyCode {
+    text-transform: uppercase;
+}
+
+.listPrice--m3-shelf {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    text-decoration-line: line-through;
+    color: $color-gray4;
+    margin-bottom: 4px;
+}
+.listPriceValue {
+    font-weight: 400;
+}
+
+.installments--m3-shelf {
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    color: #7d7d7d;
+    margin-bottom: 22px;
+}
+.savings--saving-price-badge {
+    display: block;
+    width: fit-content;
+    padding: 2px 8px 4px;
+    background: #e40202;
+}
+
+.savings-discount--saving-price-badge {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 12px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $color-white;
+}
+.sellingPrice--m3-shelf {
+    color: #292929;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 700;
+}

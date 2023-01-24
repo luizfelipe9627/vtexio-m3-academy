@@ -1,0 +1,13 @@
+{
+    "store.custom#register": {
+        "blocks": ["flex-layout.row#register"]
+    },
+
+    "flex-layout.row#register": {
+        "props": {
+            "blockClass": "institucional-wrapper"
+        },
+
+        "children": ["formB2b"]
+    }
+}

@@ -1,0 +1,39 @@
+{
+    "name": "m3-template",
+    "version": "1.0.0",
+    "main": "index.js",
+    "private": true,
+    "license": "UNLICENSED",
+    "scripts": {
+        "prepare": "husky install",
+        "vlink:custom": "cd custom && vtex link",
+        "vlink:storefront": "cd storefront && vtex link",
+        "vlink:storefront:build": "cd storefront && yarn dev",
+        "vfix:custom": "cd custom && vtex unlink && vtex link",
+        "vfix:storefront": "cd storefront && vtex unlink && vtex link",
+        "vlink": "concurrently \"yarn vlink:custom\" \"yarn vlink:storefront\" \"yarn vlink:storefront:build\"",
+        "vfix": "concurrently \"yarn vfix:custom\" \"yarn vfix:storefront\" \"yarn vlink:storefront:build\"",
+        "checkout": "yarn workspace checkout dev",
+        "checkout:prod": "yarn workspace checkout prod",
+        "lint:storefront": "yarn workspace storefront lint",
+        "lint:checkout": "yarn workspace checkout lint",
+        "lint:custom": "yarn workspace custom lint",
+        "lint": "yarn lint:custom && yarn lint:checkout && lint:storefront",
+        "postinstall": "cd custom && yarn install:all"
+    },
+    "workspaces": [
+        "custom",
+        "storefront",
+        "checkout"
+    ],
+    "devDependencies": {
+        "concurrently": "^6.0.0",
+        "husky": "^5.2.0",
+        "lerna": "^4.0.0",
+        "lint-staged": "^10.5.4"
+    },
+    "dependencies": {
+        "@commitlint/cli": "^12.0.1",
+        "@commitlint/config-conventional": "^12.0.1"
+    }
+}

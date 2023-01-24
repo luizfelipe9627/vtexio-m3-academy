@@ -1,0 +1,63 @@
+.minicartIconContainer {
+  /* background: url(assets/svgs/cart.svg) no-repeat center center !important;
+  background-size: contain;
+  height: 28px;
+  width: 28px; */
+}
+.closeIconButton{
+  background: url(assets/svgs/close-icon.svg) no-repeat center center !important;
+  background-size: contain;
+}
+.closeIconButton .closeIcon{
+  opacity: 0;
+}
+.cartIcon {
+  opacity: 0;
+}
+.minicartTitle {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 29px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #292929;
+}
+.drawerContent :global(.vtex-product-list-0-x-productName) {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19px;
+  color: #7D7D7D;
+}
+
+.drawerContent :global(.vtex-product-list-0-x-price) {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  color: #7D7D7D;
+}
+
+.minicartProductListContainer
+  :global(.vtex-flex-layout-0-x-flexRowContent--product) {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.minicartCheckoutButton :global(.vtex-button){
+  border: none;
+  letter-spacing: 0.05em;
+  font-size: 14px;
+  transition: ease-in .22s all;
+}
+.minicartCheckoutButton :global(.vtex-button):hover, .minicartCheckoutButton :global(.vtex-button):active{
+background-color: #303030;
+} 
+.unitListPrice{
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  line-height: 14px;
+  text-decoration-line: line-through;
+  color: #7D7D7D;
+}

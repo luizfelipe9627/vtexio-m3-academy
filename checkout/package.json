@@ -1,0 +1,56 @@
+{
+    "name": "checkout",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "UNLICENSED",
+    "scripts": {
+        "dev": "cross-env NODE_ENV=development gulp watch",
+        "prod": "cross-env NODE_ENV=production gulp build",
+        "lint": "eslint ./src --fix"
+    },
+    "dependencies": {
+        "@babel/plugin-transform-async-to-generator": "^7.14.5",
+        "cookie": "^0.4.1",
+        "del": "^6.0.0",
+        "glob": "^7.1.7",
+        "gulp": "^4.0.2",
+        "gulp-autoprefixer": "^8.0.0",
+        "gulp-concat": "^2.6.1",
+        "gulp-connect": "^5.7.0",
+        "gulp-if": "^3.0.0",
+        "gulp-rename": "^2.0.0",
+        "gulp-sass": "^5.0.0",
+        "gulp-sourcemaps": "^3.0.0",
+        "jquery": "^3.6.0",
+        "m3-utils": "^0.1.0",
+        "sass": "^1.38.1",
+        "terser-webpack-plugin": "^5.1.4"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.15.0",
+        "@babel/preset-env": "^7.15.0",
+        "@babel/preset-react": "^7.14.5",
+        "babel-loader": "^8.2.2",
+        "cross-env": "^7.0.3",
+        "eslint-config-prettier": "^8.3.0",
+        "eslint-plugin-prettier": "^3.4.1",
+        "lint-staged": "^11.1.2",
+        "prettier": "^2.3.2",
+        "webpack": "^5.51.1",
+        "webpack-merge": "^5.8.0"
+    },
+    "babel": {
+        "presets": [
+            "@babel/env",
+            "@babel/react"
+        ]
+    },
+    "browserslist": [
+        "defaults"
+    ],
+    "lint-staged": {
+        "src/**/*": [
+            "yarn lint"
+        ]
+    }
+}

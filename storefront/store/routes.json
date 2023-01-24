@@ -1,0 +1,32 @@
+{
+    "store.custom#entrega": {
+        "path": "/entrega"
+    },
+    "store.custom#pagamento": {
+        "path": "/pagamento"
+    },
+    "store.custom#privacidade": {
+        "path": "/privacidade"
+    },
+    "store.custom#quem-somos": {
+        "path": "/sobre"
+    },
+    "store.custom#seja-um-revendedor": {
+        "path": "/seja-um-revendedor"
+    },
+    "store.custom#seguranca": {
+        "path": "/seguranca"
+    },
+    "store.custom#troca-e-devolucao": {
+        "path": "/troca-e-devolucao"
+    },
+    "store.custom#perguntas": {
+        "path": "/perguntas"
+    },
+    "store.custom#fale-conosco": {
+        "path": "/fale-conosco"
+    },
+    "store.custom#exemple": {
+        "path": "/exemple"
+    }
+}

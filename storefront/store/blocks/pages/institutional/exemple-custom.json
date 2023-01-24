@@ -1,0 +1,11 @@
+{
+    "store.custom#exemple": {
+        "blocks": ["flex-layout.row#exemple"]
+    },
+    "flex-layout.row#exemple": {
+        "children": ["exemple"],
+        "props": {
+            "blockClass": "institucional-wrapper"
+        }
+    }
+}

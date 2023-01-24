@@ -1,0 +1,8 @@
+.MenuSearch{
+
+}
+
+
+.MenuSearch :global(.vtex-store-components-3-x-searchBarContainer){
+    border-bottom: 1px solid #E5E5E5;
+}

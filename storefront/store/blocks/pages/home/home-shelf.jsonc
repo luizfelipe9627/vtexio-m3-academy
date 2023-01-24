@@ -1,0 +1,85 @@
+//HOME SHELF
+{
+    "rich-text#m3-shelf-title": {
+        "props": {
+            "text": "## SHELF TITLE",
+            "blockClass": "m3-shelf-title",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER"
+        }
+    },
+    "flex-layout.row#m3-shelf": {
+        "children": ["list-context.product-list#m3-shelf-product-list"],
+        "props": {
+            "blockClass": "m3-shelf"
+        }
+    },
+    "list-context.product-list#m3-shelf-product-list": {
+        "blocks": ["product-summary.shelf#m3-shelf-product"],
+        "children": ["slider-layout#m3-shelf-products-slide"],
+        "props": {
+            // "orderBy": "OrderByTopSaleDESC",
+            // "category": "5",
+            "collection": "164",
+            "blockClass": "m3-shelf-product-list"
+        }
+    },
+    "slider-layout#m3-shelf-products-slide": {
+        "props": {
+            "itemsPerPage": {
+                "desktop": 4,
+                "tablet": 3,
+                "phone": 1
+            },
+            "infinite": true,
+            "fullWidth": false,
+            "blockClass": "m3-shelf-products-slide",
+            "showPaginationDots": "always"
+        }
+    },
+
+    "rich-text#m3-shelf-title-02": {
+        "props": {
+            "text": "## SHELF TITLE",
+            "blockClass": "m3-shelf-title",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER"
+        }
+    },
+    "flex-layout.row#m3-shelf-02": {
+        "children": ["list-context.product-list#m3-shelf-product-list"],
+        "props": {
+            "blockClass": "m3-shelf"
+        }
+    },
+
+    "rich-text#m3-shelf-title-03": {
+        "props": {
+            "text": "## SHELF TITLE",
+            "blockClass": "m3-shelf-title",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER"
+        }
+    },
+    "flex-layout.row#m3-shelf-03": {
+        "children": ["list-context.product-list#m3-shelf-product-list"],
+        "props": {
+            "blockClass": "m3-shelf"
+        }
+    },
+
+    "rich-text#m3-shelf-title-04": {
+        "props": {
+            "text": "## SHELF TITLE",
+            "blockClass": "m3-shelf-title",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER"
+        }
+    },
+    "flex-layout.row#m3-shelf-04": {
+        "children": ["list-context.product-list#m3-shelf-product-list"],
+        "props": {
+            "blockClass": "m3-shelf"
+        }
+    }
+}

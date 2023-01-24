@@ -1,0 +1,17 @@
+{
+    "flex-layout.row#top-bar": {
+        "children": ["link#top-bar"],
+        "props": {
+            "blockClass": "top-bar",
+            "horizontalAlign": "center",
+            "preventHorizontalStretch": false
+        }
+    },
+    "link#top-bar": {
+        "props": {
+            "href": "Agencia M3",
+            "label": "Agencia M3",
+            "blockClass": "top-bar"
+        }
+    }
+}

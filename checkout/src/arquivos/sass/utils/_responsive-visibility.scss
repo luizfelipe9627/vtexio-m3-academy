@@ -1,0 +1,91 @@
+// Mixins de definição
+@mixin visibility($parent, $display:block) {
+    @if $display==none {
+        $display: block;
+    }
+    #{$parent} {
+        display: $display !important;
+    }
+}
+
+@mixin visibility-table($parent) {
+    table#{$parent} {
+        display: table !important;
+    }
+    tr#{$parent} {
+        display: table-row !important;
+    }
+    th#{$parent},
+    td#{$parent} {
+        display: table-cell !important;
+    }
+}
+
+// [converter] $parent hack
+@mixin invisibility($parent) {
+    #{$parent} {
+        display: none !important;
+    }
+}
+
+
+@each $slug,$width in $grid-breakpoints {
+    $class: unquote('.visible-'+$slug);
+    $classOnly: unquote('.visible-only-'+$slug);
+    @include invisibility($class);
+    @include invisibility($classOnly);
+}
+
+@each $slug,$width in $grid-breakpoints {
+    $class: unquote('.visible-'+$slug);
+    $value: map-get-next($grid-breakpoints,$slug);
+    $media: '(max-width: '+ (($value)-1) +')';
+    @if($value == false){
+      $media: '(min-width: '+ $width +')';
+    }
+    @media only screen and #{$media} {
+        @include visibility($class);
+        @include visibility($class+'-inline-block',inline-block);
+        @include visibility($class+'-inline',inline);
+        @include visibility-table($class);
+    }
+}
+
+@each $slug,$width in $grid-breakpoints {
+    $class: unquote('.visible-only-'+$slug);
+    $value: map-get-next($grid-breakpoints,$slug);
+    $media: '(min-width: '+ $width +') and (max-width: '+ $value +')';
+    @if($value == false){
+      $media: '(min-width: '+ (($width)+1) +')';
+    }
+    @media only screen and #{$media} {
+        @include visibility($class);
+        @include visibility($class+'-inline-block',inline-block);
+        @include visibility($class+'-inline',inline);
+        @include visibility-table($class);
+    }
+}
+
+@each $slug,$width in $grid-breakpoints {
+    $class: unquote('.invisible-'+$slug);
+    $value: map-get-next($grid-breakpoints,$slug);
+    $media: '(max-width: '+ (($value)-1) +')';
+    @if($value == false){
+      $media: '(min-width: '+ $width +')';
+    }
+    @media only screen and #{$media} {
+        @include invisibility($class);
+    }
+}
+
+@each $slug,$width in $grid-breakpoints {
+    $class: unquote('.invisible-only-'+$slug);
+    $value: map-get-next($grid-breakpoints,$slug);
+    $media: '(min-width: '+ $width +') and (max-width: '+ $value +')';
+    @if($value == false){
+      $media: '(min-width: '+$width +')';
+    }
+    @media only screen and #{$media} {
+        @include invisibility($class);
+    }
+}

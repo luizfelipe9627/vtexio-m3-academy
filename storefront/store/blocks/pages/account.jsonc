@@ -1,0 +1,50 @@
+{
+    "store.account": {
+        "blocks": ["flex-layout.row#title", "flex-layout.row#pedidos-antigos"],
+        "parent": {
+            "challenge": "challenge.profile"
+        }
+    },
+    "flex-layout.row#title": {
+        "props": {
+            "blockClass": "account-title",
+            "preserveLayoutOnMobile": true,
+            "preventHorizontalStretch": true,
+            "horizontalAlign": "center"
+        },
+        "children": ["rich-text#account-title"]
+    },
+    "rich-text#account-title": {
+        "props": {
+            "blockClass": "account-title-text",
+            "text": "Minha Conta"
+        }
+    },
+    "flex-layout.row#pedidos-antigos": {
+        "props": {
+            "blockClass": "pedidos-antigos",
+            // "horizontalAlign": "right",
+            "colSizing": "auto"
+            // "preventHorizontalStretch": true,
+            // "preserveLayoutOnMobile": true
+        },
+        "children": ["flex-layout.col#pedidos-antigos"]
+    },
+    "flex-layout.col#pedidos-antigos": {
+        "props": {
+            "width": "100%",
+            "blockClass": "pedidos-antigos"
+            // "horizontalAlign": "right",
+            // "preventHorizontalStretch": true,
+            // "preserveLayoutOnMobile": true
+        },
+        "children": ["link#pedidos-antigos", "my-account"]
+    },
+    "link#pedidos-antigos": {
+        "props": {
+            "blockClass": "pedidos-antigos",
+            "href": "p",
+            "label": "clique aqui para consultar pedidos anteriores a 11/11"
+        }
+    }
+}

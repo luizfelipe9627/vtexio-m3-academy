@@ -1,0 +1,88 @@
+.menuMobileHeader{
+    display: flex;
+    padding: 10px 20px 20px 20px;
+    flex-direction: column;
+    border-bottom: 1px solid #E5E5E5;
+    margin: 0 0 30px;
+}
+
+.menuLink {
+    display: block;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 11px;
+    text-transform: uppercase;
+    text-decoration-line: underline;
+    color: #828282;
+    margin: 0 0 10px;
+}
+.menuWishlistIcon,
+.menuLojasIcon {
+    display: flex;
+    align-items: center;
+    margin: 0 0 10px;
+}
+.menuWishlistIcon > img,
+.menuLojasIcon > img {
+    margin-right: 10px;
+}
+.menuWishlistIcon > a,
+.menuLojasIcon > a {
+    font-family: "Roboto", sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #191818;
+    text-decoration: none;
+}
+
+.menuMobileHeaderText{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.menuMobileLockIcon{
+    margin-right: 7px;
+}
+
+.menuMobileHeaderTextSpan{
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #7D7D7D;
+    margin-top: 6px;
+}
+
+.menuMobileHeaderClose::before{
+    content: "";
+    display: block;
+    width: 1px;
+    height: 100%;
+    position: absolute;
+    left: -27px;
+    background: #E5E5E5;
+}
+
+.menuMobileHeaderClose{
+    height: 36px;
+    position: relative;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.menuMobileHeaderCloseIcon{
+
+}
+
+.menuMobileHeader :first-child{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

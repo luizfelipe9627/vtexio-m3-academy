@@ -1,0 +1,12 @@
+{
+    // M3 NEWSLETTER
+    "newsletter#m3-newsletter": {
+        "props": {
+            "blockClass": "m3-newsletter",
+            "label": "LOREM IPSUM DOLOR SIT AMET",
+            "placeholder": "E-mail",
+            "submit": "ENVIAR",
+            "hideLabel": false
+        }
+    }
+}

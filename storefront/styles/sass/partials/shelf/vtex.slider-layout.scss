@@ -1,0 +1,30 @@
+
+/* M3 MAIN SLIDER */
+/* ---------------------------------------------------------------------------------------- */
+
+.paginationDotsContainer--m3-main-slider {
+  margin-bottom: 12px;
+}
+/* M3 SHELF SLIDER  */
+/* ---------------------------------------------------------------------------------------------------------------- */
+
+.slideChildrenContainer--m3-shelf-products-slide {
+  padding: 8px;
+}
+
+.paginationDot--m3-shelf-products-slide {
+  background: $color-gray4;
+  height: 8px !important;
+  width: 8px !important;
+}
+
+.paginationDot--m3-shelf-products-slide--isActive {
+  background: transparent;
+  border: 1px solid $color-gray4;
+  height: 13px !important;
+  width: 13px !important;
+}
+
+.paginationDotsContainer--m3-shelf-products-slide {
+  margin-bottom: none;
+}

@@ -1,0 +1,47 @@
+.heading {
+}
+
+.form {
+}
+
+.title {
+    font-size: 32px;
+    line-height: 38px;
+    letter-spacing: 0.05em;
+    margin: 26px 0 0 0;
+    color: #292929;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.subtitle {
+    font-size: 13px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #7d7d7d;
+    margin-top: 8px;
+}
+
+.submitBtnWrapper {
+    margin-top: 32px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.submitBtn {
+    background: #292929;
+    border-radius: 5px;
+    color: #fff;
+    padding: 16px 52px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.05em;
+    transition: all 0.2s;
+}
+
+.submitBtn:hover {
+    cursor: pointer;
+    background: #3a3a3a;
+}

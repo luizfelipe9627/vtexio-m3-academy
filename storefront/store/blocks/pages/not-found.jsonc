@@ -1,0 +1,85 @@
+{
+    "store.not-found#product": {
+        "blocks": [
+            "flex-layout.row#product-not-found",
+            "newsletter#m3-newsletter",
+            "link#whatsapp"
+        ]
+    },
+    "store.not-found#search": {
+        "blocks": [
+            "flex-layout.row#search-not-found",
+            "newsletter#m3-newsletter",
+            "link#whatsapp"
+        ]
+    },
+    "flex-layout.row#product-not-found": {
+        "props": {
+            "blockClass": "not-found-row"
+        },
+        "children": ["flex-layout.col#product-not-found"]
+    },
+    "flex-layout.row#search-not-found": {
+        "props": {
+            "blockClass": "not-found-row"
+        },
+        "children": ["flex-layout.col#search-not-found"]
+    },
+    "flex-layout.col#product-not-found": {
+        "children": [
+            "rich-text#produt-not-found-1",
+            "rich-text#produt-not-found-2",
+            "link#produt-not-found-to-home"
+        ]
+    },
+    "flex-layout.col#search-not-found": {
+        "children": [
+            "rich-text#search-not-found-1",
+            "rich-text#search-not-found-2",
+            "link#produt-not-found-to-home"
+        ]
+    },
+    "rich-text#produt-not-found-1": {
+        "props": {
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "text": "**Produto não encontrado**",
+            "font": "t-heading-1",
+            "blockClass": "not-found-heading"
+        }
+    },
+    "rich-text#search-not-found-1": {
+        "props": {
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "text": "**Produto não encontrado**",
+            "font": "t-heading-1",
+            "blockClass": "not-found-heading"
+        }
+    },
+    "rich-text#produt-not-found-2": {
+        "props": {
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "text": "**Não encontramos nenhum produto.**",
+            "font": "t-heading-2",
+            "blockClass": "not-found-sub-heading"
+        }
+    },
+    "rich-text#search-not-found-2": {
+        "props": {
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "text": "**Não encontramos nenhum produto.**",
+            "font": "t-heading-2",
+            "blockClass": "not-found-sub-heading"
+        }
+    },
+    "link#produt-not-found-to-home": {
+        "props": {
+            "href": "/",
+            "label": "voltar",
+            "blockClass": "not-found-btn"
+        }
+    }
+}

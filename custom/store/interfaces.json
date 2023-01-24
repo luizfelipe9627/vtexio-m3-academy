@@ -1,0 +1,33 @@
+{
+    "exemple": {
+        "component": "Exemple"
+    },
+    "formB2b": {
+        "component": "B2bForm"
+    },
+    "m3-responsive-render": {
+        "component": "ResponsiveRender",
+        "composition": "children"
+    },
+
+    "dynamic-menu": {
+        "component": "DynamicMenu",
+        "composition": "children",
+        "content": {
+            "$ref": "app:agenciamagma.m3-custom#/definitions/DynamicMenu"
+        }
+    },
+    "dynamic-menu#mobile": {
+        "component": "DynamicMenu",
+        "composition": "children",
+        "content": {
+            "$ref": "app:agenciamagma.m3-custom#/definitions/DynamicMenu"
+        }
+    },
+    "menu-academy": {
+        "component": "Menu"
+    },
+    "countdown-academy": {
+        "component": "Countdown"
+    }
+}

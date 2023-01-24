@@ -1,0 +1,176 @@
+{
+    "header": {
+        "blocks": ["header-layout.desktop", "header-layout.mobile"]
+    },
+    "header.full": {
+        "blocks": ["header-layout.desktop", "header-layout.mobile"]
+    },
+    "header-layout.desktop": {
+        "children": [
+            // "flex-layout.row#top-bar",
+            "header-row#4-desktop",
+            "header-row#5-desktop",
+            "telemarketing"
+        ]
+    },
+    "header-row#4-desktop": {
+        "children": [
+            "logo#desktop",
+            "header-spacer",
+            "search-bar",
+            "header-spacer",
+            "flex-layout.row#login-desktop",
+            "minicart.v2"
+        ],
+        "props": {
+            "sticky": true,
+            "blockClass": "main-header"
+        }
+    },
+    "header-row#5-desktop": {
+        "children": ["dynamic-menu"],
+        "props": {
+            "sticky": false,
+            "blockClass": "main-header-menu"
+        }
+    },
+    "search-bar": {
+        "blocks": ["autocomplete-result-list.v2"],
+        "props": {
+            "openAutocompleteOnFocus": true,
+            "maxWidth": "264px",
+            "placeholder": "Buscar...",
+            "displayMode": "clear-button"
+        }
+    },
+    "autocomplete-result-list.v2": {
+        "blocks": ["product-summary.shelf#m3-shelf-product"]
+    },
+    "search-bar#mobile": {
+        "blocks": ["autocomplete-result-list.v2"],
+        "props": {
+            "blockClass": "mobile",
+            "openAutocompleteOnFocus": true,
+            "maxWidth": "264px",
+            "placeholder": "Buscar...",
+            "displayMode": "clear-button"
+        }
+    },
+    "logo#desktop": {
+        "props": {
+            "title": "Agência M3 Logo",
+            "href": "/",
+            "url": "assets/svgs/logo.svg",
+            "width": "60"
+        }
+    },
+    "header-layout.mobile": {
+        "children": [
+            // "flex-layout.row#top-bar",
+            "header-row#1-mobile",
+            "header-row#2-mobile"
+        ],
+        "props": {
+            "blockClass": "mobile-header"
+        }
+    },
+    "header-row#1-mobile": {
+        "children": ["flex-layout.row#menuHam", "logo#mobile", "minicart.v2"],
+        "props": {
+            "sticky": true,
+            "blockClass": "main-header-mobile"
+        }
+    },
+    "flex-layout.row#menuHam": {
+        "children": ["dynamic-menu#mobile"],
+        "props": {
+            "blockClass": "menuHam"
+        }
+    },
+
+    "header-row#2-mobile": {
+        "children": ["search-bar#mobile"],
+        "props": {
+            "sticky": false,
+            "blockClass": ["mobile-search", "teste"]
+        }
+    },
+    "drawer": {
+        "props": {
+            "maxWidth": "311px"
+        },
+        "children": ["menu#drawer"]
+    },
+    "flex-layout.row#login-desktop": {
+        "children": ["login"],
+        "props": {
+            "preventHorizontalStretch": false,
+            "colSizing": "2",
+            "blockClass": "login-wrapper"
+        }
+    },
+    "flex-layout.row#drawer-top": {
+        "children": ["flex-layout.col#drawer-top-links"],
+        "props": {
+            "sticky": true,
+            "blockClass": "drawer-top-content"
+        }
+    },
+    "flex-layout.col#drawer-top-links": {
+        "children": [
+            "menu-item#sign-up-&-sign-in",
+            "login#mobile",
+            "menu-item#my-account",
+            "menu-item#my-orders"
+        ],
+        "props": {
+            "sticky": true,
+            "blockClass": "mobile-links-container"
+        }
+    },
+    "menu#drawer": {
+        "children": [
+            "flex-layout.row#drawer-top",
+            "menu-item#category-departamento--mobile",
+            "menu-item#category-Camisas",
+            "menu-item#category-baby-doll",
+            "menu-item#category-vestidos"
+        ],
+        "props": {
+            "orientation": "vertical",
+            "blockClass": "m3-custom-drawer"
+        }
+    },
+    "logo#mobile": {
+        "props": {
+            "title": "Agência M3 Logo",
+            "href": "/",
+            "url": "assets/svgs/logo.svg",
+            "width": "60"
+        }
+    },
+    "login": {
+        //https://github.com/vtex-apps/login/blob/master/docs/README.md
+        "props": {
+            "emailAndPasswordTitle": "LOG-IN",
+            "accessCodeTitle": "Receber código de acesso ",
+            "emailPraceholder": "e-mail",
+            "passwordPlaceholder": "password",
+            "showPasswordVerificationIntoTooltip": true,
+            "hasGoogleOneTap": false
+        }
+    },
+    "login#mobile": {
+        //https://github.com/vtex-apps/login/blob/master/docs/README.md
+        "props": {
+            // "logInButtonBehavior":"link",
+            "mirrorTooltipToRight": true,
+            "blockClass": "mobile",
+            "emailAndPasswordTitle": "LOG-IN",
+            "accessCodeTitle": "Receber código de acesso",
+            "emailPraceholder": "e-mail",
+            "passwordPlaceholder": "password",
+            "showPasswordVerificationIntoTooltip": true
+        }
+    }
+}

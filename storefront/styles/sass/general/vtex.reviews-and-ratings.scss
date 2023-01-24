@@ -1,0 +1,55 @@
+.reviewsHeading {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: $color-gray4;
+}
+.star {
+  color: #ffcd00;
+}
+.reviewsRatingAverage {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: #7d7d7d;
+}
+.formContainer {
+  background-color: unset!important;
+}
+.reviewsRatingCount {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: #7d7d7d;
+}
+
+.reviewComment {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: #7d7d7d;
+}
+
+.formContainer :global(.vtex-button) {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 13px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $color-white;
+}
+.summaryContainer{
+  
+  color: #7d7d7d;
+}

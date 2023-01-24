@@ -1,0 +1,16 @@
+{
+    "shelf.relatedProducts": {
+        "props": {
+            "blockClass": "m3-shelf-product",
+            "recommendation": "view",
+
+            "productList": {
+                "titleText": "VEJA TAMBÉM",
+                "itemsPerPage": 4,
+                "gap": "ph3"
+            }
+        },
+
+        "blocks": ["product-summary.shelf#m3-shelf-product"]
+    }
+}

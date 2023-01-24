@@ -1,0 +1,18 @@
+{
+    "store.search#subcategory": {
+        "props": {
+            "context": {
+                "orderByField": "OrderByTopSaleDESC",
+                "maxItemsPerPage": 9,
+                "skusFilter": "ALL",
+                "simulationBehavior": "default"
+            }
+        },
+
+        "blocks": [
+            "search-result-layout",
+            "newsletter#m3-newsletter",
+            "link#whatsapp"
+        ]
+    }
+}
