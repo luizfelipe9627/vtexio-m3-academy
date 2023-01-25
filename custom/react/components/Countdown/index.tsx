@@ -1,6 +1,12 @@
 // Está importando a biblioteca do React.
 import React, { useEffect, useState } from "react";
 
+// Está importando o estilo.
+import styles from "./styles.css";
+
+// Está importando a imagem.
+import clockIcon from "./assets/clock.svg";
+
 // Interface definindo o tipo de data final em string.c
 interface CountdownProps {
     // Criada para seguir a data e hora final(passada).
@@ -94,14 +100,50 @@ const Countdown = ({ endDate }: CountdownProps) => {
         setInterval(updateTimer, 1000);
     }, []);
 
+    // Está atribuindo a div uma classe chamada CountdownWrapper.
     return (
-        <div>
-            {`
-                ${hoursString}:${minuteString}:${secondString}
-            `}
+        <div className={styles["Countdown"]}>
+            <div className={styles["CountdownWrapper"]}>
+                <div className={styles["CountdownBadge"]}>
+                    <img src={clockIcon} alt="Relógio" />
+                </div>
+
+                <div className={styles["CountdownTitle"]}>
+                    <h1 className={styles["CountdownTitleH1"]}>ofertas</h1>
+                    <h3 className={styles["CountdownTitleH3"]}>
+                        Não perca tempo,
+                    </h3>
+                    <h2 className={styles["CountdownTitleH2"]}>
+                        garanta agora
+                    </h2>
+                </div>
+
+                <div className={styles["CountdownText"]}>
+                    {` ${hoursString}:${minuteString}:${secondString}`}
+                </div>
+            </div>
         </div>
     );
 };
 
 // Exporta o arquivo para ser usado em outros escopos.
 export default Countdown;
+
+// Para o componente ser editavel pelo Site Editor precisa declarar uma schema.
+Countdown.schema = {
+    // Titulo do schema.
+    title: "Countdown Academy",
+    // O tipo do schema, no caso o tipo que ele irá receber.
+    type: "object",
+    // Declara todas propriedades que ele recebe.
+    properties: {
+        endDate: {
+            // Titulo da propriedade.
+            title: "Data final de Countdown",
+            // O tipo da propriedade.
+            type: "string",
+            // Um valor default para a propriedade.
+            default : "27/01/2023/00:00"
+        }
+    }
+};

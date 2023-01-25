@@ -20,7 +20,8 @@
     "countdown-academy": {
         "props": {
             // Configurado a props que vai receber a data final.
-            "endDate": "25/01/2023/00:00"
+            "endDate": "27/01/2023/00:00",
+            "blockClass": "testando"
         }
     },
 
